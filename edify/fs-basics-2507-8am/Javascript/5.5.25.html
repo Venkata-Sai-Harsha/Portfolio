@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="5.5.25.css"/>
+</head>
+<body>
+    <div class="calculator-container">
+        <div>
+            <input type="text" placeholder="Enter Value 1" id="num1"/>
+        </div>
+        <div>
+            <input type="text" placeholder="Enter Value 2" id="num2"/>
+        </div>
+        <button onclick="calculateSum()">Add</button>
+        <button onclick="calculateDifference()">Subtract</button>
+        <button onclick="calculateProduct()">Multiply</button>
+        <button onclick="calculateReminder()">Divide</button>
+        <h4>Result: <span id="result"></span></h4>
+
+        <div>
+            <input type="text" placeholder="Enter Pancard No..." onkeyup="formatPancardNo()" id="pancard-no"/>
+        
+        </div>
+    </div>
+
+
+    <script>
+
+        function displayUsername(username) {
+            console.log('Username: ', username);
+        }
+
+        // Onload of the page
+        displayUsername('bhargav908');
+
+        displayUsername('varun78');
+
+        var formattedUsername = displayUsername('dinesh90');
+
+        // function calculateSum(num1, num2) {
+        //     var sum = num1 + num2;
+        //     console.log('Sum: ', sum);
+        // }
+
+        // calculateSum(56, 45);
+
+        // calculateSum(10, 4);
+
+        // calculateSum(12, 21);
+
+
+        function calculateSum() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var result = num1 + num2;
+            document.getElementById('result').innerHTML = result;
+        }
+
+        function calculateDifference() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var result = num1 - num2;
+            document.getElementById('result').innerHTML = result;
+        }
+
+        function calculateProduct() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var result = num1 * num2;
+            document.getElementById('result').innerHTML = result;
+        }
+
+        function calculateReminder() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var result = num1 / num2;
+            document.getElementById('result').innerHTML = result;
+        }
+
+        function getFullName(firstName, lastName) {
+            var fullName = 'Mr. ' + firstName + ' ' + lastName;
+
+            return fullName;
+        };
+
+        console.log(getFullName('Dinesh', 'Karthik'));
+
+        console.log(getFullName('Rahul', 'Dravid'));
+
+        var address = {
+            plotNo: '110/A',
+            area: 'Madhapur',
+            city: 'Hyderabad',
+            pincode: 500001
+        };
+
+        function formatAddress(address) {
+
+            var formattedAddress = address.plotNo + ', ' + address.area + ', ' + address.city + ', ' + address.pincode + '.';
+
+            return formattedAddress;
+        }
+
+        console.log(formatAddress(address));
+
+
+        function formatPancardNo() {
+            var pancardNo = document.getElementById('pancard-no');
+
+            pancardNo.value = pancardNo.value.toUpperCase();
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+Flexbox: 
+> Flexbox is introduced in CSS3.
+
+    Syntax:
+
+        <div id="parent-container">
+            <div class="child-container"></div>
+            <div class="child-container"></div>
+        </div>
+
+Concept reference link:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Task: Design Categories page of Megasis
+https://preview.colorlib.com/theme/megasis/category.html

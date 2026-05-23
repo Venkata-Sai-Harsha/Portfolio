@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var i = 0;
+        while (i < 10) {
+            console.log('Iteration: ', i);
+            i++; // i = i + 1
+        }
+
+        do {
+            console.log('Iteration: ', i);
+            i++; // i = i + 1
+        } while (i < 0);
+
+        for (var i = 0; i < 10; i++) {
+            console.log('Iteration: ', i);
+        }
+
+        for (var i = 10; i > 0; i--) {
+            console.log('Iteration: ', i);
+        }
+
+        var products = [
+            {
+                "id": 1,
+                "name": "Wireless Mouse",
+                "description": "Ergonomic wireless mouse with 2.4 GHz connectivity",
+                "price": 25.99,
+                "category": "Electronics",
+                "in_stock": true,
+                "image": "https://example.com/images/wireless-mouse.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Bluetooth Headphones",
+                "description": "Over-ear headphones with noise cancellation",
+                "price": 89.99,
+                "category": "Electronics",
+                "in_stock": true,
+                "image": "https://example.com/images/bluetooth-headphones.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Coffee Maker",
+                "description": "12-cup programmable coffee maker with timer",
+                "price": 49.95,
+                "category": "Home Appliances",
+                "in_stock": false,
+                "image": "https://example.com/images/coffee-maker.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Yoga Mat",
+                "description": "Non-slip yoga mat with carrying strap",
+                "price": 19.99,
+                "category": "Fitness",
+                "in_stock": true,
+                "image": "https://example.com/images/yoga-mat.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Water Bottle",
+                "description": "Stainless steel insulated water bottle (500ml)",
+                "price": 15.00,
+                "category": "Fitness",
+                "in_stock": true,
+                "image": "https://example.com/images/water-bottle.jpg"
+            }
+        ];
+
+        for (var i = 0; i < products.length; i++) {
+            console.log('Id:', products[i].id);
+            console.log('Name:', products[i].name);
+            console.log('Price:', products[i].price);
+            console.log('-------------------------');
+        }
+
+        for (var i = products.length - 1; i >= 0; i--) {
+            console.log('Id:', products[i].id);
+            console.log('Name:', products[i].name);
+            console.log('Price:', products[i].price);
+            console.log('-------------------------');
+        }
+
+        var productInfo = products[0];
+
+        console.log(productInfo);
+
+        for (var key in productInfo) {
+            console.log(key, productInfo[key]);
+        }
+
+        var voter = {
+            voter_id: "APX1234567",
+            name: "Rahul Sharma",
+            age: 30,
+            gender: "Male",
+            address: {
+                house_no: "12-45/B",
+                street: "MG Road",
+                city: "Hyderabad",
+                state: "Telangana",
+                pincode: "500001"
+            },
+            constituency: "Hyderabad Central",
+            is_registered: true,
+            has_voted: false
+        };
+
+        console.log(voter.voter_id)
+
+        console.log(voter.constituency);
+
+        console.log(voter.address.pincode);
+
+    </script>
+</body>
+
+</html>

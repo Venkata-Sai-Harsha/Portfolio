@@ -1,0 +1,37 @@
+Form Validations:
+> Client Side Form validations is handled using Javascript.
+
+Types
+1. Required
+2. Minimum Length
+3. Maximum Length
+4. Pattern (Regular Expression - RegEx)
+
+    Email - word@domain.com / word.word@domain.gov.in
+
+    Password - Atleast one upper case, lower case, one digit, special char, minimum 8 characters
+
+    Credit Card No - XXXX XXXX XXXX XXXX
+
+    Mobile No - 10 digits - First letter should start with either 6/7/8/9
+
+Regular Expressions:
+
+            /^ $/
+
+            ^ - Starting of the string
+            $ - Ending of the string
+
+        .igit
+
+> Character Classes
+> Anchors
+> Escaped characters
+> Groups & Lookaround
+> Quantifiers & Alternation
+
+/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+
+/^[6-9]\d{9}$/
+
+/^4[0-9]{12}(?:[0-9]{3})?$/

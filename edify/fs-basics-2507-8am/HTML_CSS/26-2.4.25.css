@@ -1,0 +1,50 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+#our-trending-courses h1 {
+    text-align: center;
+}
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    padding: 15px 3rem;
+}
+.course {
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+}
+.course h2 {
+    margin: 0px;
+}
+.course p {
+    margin-bottom: 30px;
+}
+.curriculum {
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-right: 5px;
+} 
+.enroll-now {
+    border: 1px solid red;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .courses {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+    }
+}

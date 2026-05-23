@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="23.4.25.css"/>
+</head>
+<body>
+
+    <div id="registration-form">
+        <form>
+            <div>
+                <h1>Registration Form</h1>
+                <div class="form-field">
+                    <label>Firstname</label>
+                    <input type="text" placeholder="Enter Firstname" name="firstname" required/>
+                </div>
+                <div class="form-field">
+                    <label>Mobile No</label>
+                    <input type="number" placeholder="Enter Mobile No" name="mobileno" required/>
+                </div>
+                <div class="form-field">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter Email" name="email" required/>
+                </div>
+                <div class="form-field">
+                    <label>Gender</label>
+                    <div>
+                        <input type="radio" name="gender" checked/>Male
+                        <input type="radio" name="gender"/>Female
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label>Languages Known</label>
+                    <div>
+                        <input type="checkbox" name="languages-known" checked/>English
+                        <input type="checkbox" name="languages-known"/>Bengali
+                        <input type="checkbox" name="languages-known"/>Marathi
+                        <input type="checkbox" name="languages-known"/>Kannada
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label>Date of Birth</label>
+                    <input type="datetime-local" name="date-of-birth"/>
+                </div>
+                <div class="form-field">
+                    <label>Resume</label>
+                    <input type="file" name="resume" accept="application/pdf"/>
+                </div>
+                <div>
+                    <input type="submit" value="Register"/>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>

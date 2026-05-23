@@ -1,0 +1,46 @@
+Tables: Displaying the information in rows and columns format.
+
+    Syntax:
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Content</th>
+                    <th>Content</th>
+                    <th>Content</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+            </tbody>
+        </table>
+
+        tr - table row
+        th - table head
+        td - table data
+
+Pseudo Class: 
+
+    selector:pseudo-class {
+        property: value;
+    }
+
+    nth-child(even/odd/rowNo)
+
+Task: Design table.
+
+https://colorlib.com/etc/tb/Table_Fixed_Header/index.html

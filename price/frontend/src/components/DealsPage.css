@@ -1,0 +1,36 @@
+.deals-container {
+  padding: 20px;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.deal-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.deal-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.deal-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.deal-price {
+  font-size: 1.1em;
+  color: green;
+}
+
+.deal-link {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}

@@ -1,0 +1,113 @@
+CSS: Adds styles and design layouts to content which is displayed using HTML.
+> CSS stands for Cascading style sheets.
+> CSS consists of predefined key value pairs.
+> File extension:
+
+    fileName.css
+
+> CSS has predefined property value pairs.
+
+    Syntax:
+
+        selector {
+            property1: value1;
+            property2: value2;
+
+
+            propertyN: valueN;
+        }
+
+        selector - tag name
+
+External Stylesheet:
+
+    fileName.css
+
+    selector {
+        property1: value1;
+        property2: value2;
+
+
+        propertyN: valueN;
+    }
+
+    selector {
+        property1: value1;
+        property2: value2;
+
+
+        propertyN: valueN;
+    }
+
+
+    To link css file in html file:
+
+        <head>
+            <link rel="stylesheet" href="fileName.css"/>
+        </head>
+
+Id Attribute: This attribute is used to uniquely identify a particular html element.
+
+    Syntax:
+
+        HTML:
+
+            <tagName id="idName"></tagName>
+
+            <a id="free-demo"></a>
+
+            <a id="get-in-touch"></a>
+
+        CSS:
+
+            #idName {
+                property1: value1;
+                property2: value2;
+
+
+                propertyN: valueN;
+            }
+
+Class: Class is used to point a group of html elements.
+
+    Syntax:
+
+        HTML:
+
+            <tagName class="class-name"></tagName>
+
+            <a class="free-demo"></a>
+
+            <a class="get-in-touch"></a>
+
+        CSS:
+
+            .class-name {
+                property1: value1;
+                property2: value2;
+
+
+                propertyN: valueN;
+            }
+
+
+        tag-name/#id-name/.class-name {
+
+        }
+
+Note:
+> To refer all the html elements - Tag Name
+> To refer a group of html elements - Class Name
+> To refer a specific html element - Id Name
+
+Border: Used to apply border across the html element.
+
+    Syntax:
+
+        border: border-width border-style border-color;
+
+        Eg: border: 1px solid black;
+
+            border-{top | left | right | bottom}: 1px solid black;
+
+            border-style: solid | dashed | dotted

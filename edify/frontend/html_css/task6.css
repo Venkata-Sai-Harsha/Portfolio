@@ -1,0 +1,29 @@
+body{
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+#parent-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100vh;
+}
+.child-container{
+    width: 23%;
+}
+.child-container img {
+    width: 100%;
+}
+.child-container h5{
+    color: crimson;
+}
+.child-container h3{
+    width: 75%;
+    font-size: 21px;
+}

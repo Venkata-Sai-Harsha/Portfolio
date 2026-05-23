@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="16.5.25.css"/>
+</head>
+<body>
+
+    <h3>Good Morning <span id="fullname"></span>!</h3>
+
+    <h4 class="header"></h4>
+    <h2 class="header"></h2>
+    <p class="header"></p>
+
+    <h1></h1>
+    <h1></h1>
+
+    <button id="register-btn">Register</button>
+
+    <ul id="product-list">
+        
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>In Stock</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody id="product-list-tbody">
+
+        </tbody>
+    </table>
+
+    <script>
+
+        var name2 = document.getElementById('fullname');
+
+        name2.innerHTML = 'Digital Edify';
+
+        name2.style.border = '1px solid gray';
+
+        name2.style.color = 'red';
+
+        name2.style.padding = '8px 12px';
+
+        // HTML Collection - Array
+        var headers = document.getElementsByClassName('header');
+
+        for (var i = 0; i < headers.length; i++) {
+            headers[i].innerHTML = 'Digital Edify';
+
+            headers[i].style.border = '1px solid gray';
+
+            headers[i].style.color = 'red';
+
+            headers[i].style.padding = '8px 12px';
+        }
+
+        // HTML Collection - Array
+        var headers1 = document.getElementsByTagName('h1');
+
+        console.log(headers1);
+
+        for (var i = 0; i < headers1.length; i++) {
+            headers1[i].innerHTML = 'The Image object represents an HTML <img> element.';
+            headers1[i].style.color = 'green';
+        }
+
+        var registerBtn = document.getElementById('register-btn');
+
+        registerBtn.addEventListener('click', function() {
+            console.log('In register btn function...');
+        });
+
+        var products = [
+            "Apple iPhone 15",
+            "Samsung Galaxy S24",
+            "Sony WH-1000XM5 Headphones",
+            "Dell XPS 15 Laptop",
+            "Nike Air Max Sneakers",
+            "Adidas Ultraboost",
+            "Apple MacBook Air M2",
+            "Google Pixel 8",
+            "Canon EOS R6 Camera",
+            "Samsung 55\" 4K TV"
+        ];
+
+        for (var i = 0; i < products.length; i++) {
+            var li = document.createElement('li');
+
+            li.innerHTML = products[i];
+
+            var ul = document.getElementById('product-list');
+
+            ul.appendChild(li);
+        }
+
+        var productList = [
+            {
+                "id": 1,
+                "name": "Wireless Mouse",
+                "description": "Ergonomic wireless mouse with 2.4 GHz connectivity",
+                "price": 25.99,
+                "category": "Electronics",
+                "in_stock": true,
+                "image": "https://example.com/images/wireless-mouse.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Bluetooth Headphones",
+                "description": "Over-ear headphones with noise cancellation",
+                "price": 89.99,
+                "category": "Electronics",
+                "in_stock": true,
+                "image": "https://example.com/images/bluetooth-headphones.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Coffee Maker",
+                "description": "12-cup programmable coffee maker with timer",
+                "price": 49.95,
+                "category": "Home Appliances",
+                "in_stock": false,
+                "image": "https://example.com/images/coffee-maker.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Yoga Mat",
+                "description": "Non-slip yoga mat with carrying strap",
+                "price": 19.99,
+                "category": "Fitness",
+                "in_stock": true,
+                "image": "https://example.com/images/yoga-mat.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Water Bottle",
+                "description": "Stainless steel insulated water bottle (500ml)",
+                "price": 15.00,
+                "category": "Fitness",
+                "in_stock": true,
+                "image": "https://example.com/images/water-bottle.jpg"
+            }
+        ];
+
+        for (var i = 0; i < productList.length; i++) {
+            var productListTbody = document.getElementById('product-list-tbody');
+
+            var tr = document.createElement('tr');
+
+            var product = productList[i];
+
+            for (var key in product) {
+                var td = document.createElement('td');
+                if (key === 'image') {
+                    var img = document.createElement('img');
+                    img.src = product[key];
+                    td.appendChild(img);
+                    tr.appendChild(td);
+                } else {
+                    td.innerHTML = product[key];
+                    tr.appendChild(td);
+                }
+            }
+            productListTbody.appendChild(tr);
+        }
+
+    </script>
+
+</body>
+</html>

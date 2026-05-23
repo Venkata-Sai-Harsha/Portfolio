@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/forms.css"/>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+          <h2>Login</h2>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" onkeyup="clearValidationMsg()">
+          <p id="email-msg"></p>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" onkeyup="clearValidationMsg()">
+          <p id="password-msg"></p>
+          <button onclick="loginUser()">Login</button>
+        </div>
+      </div>
+
+      <script>
+        var users = [];
+
+        (function() {
+            var httpRequest = new XMLHttpRequest();
+            httpRequest.onreadystatechange = function() {
+                if (httpRequest.readyState === 4) {
+                    users = JSON.parse(httpRequest.responseText);
+                }
+            }
+
+            httpRequest.open('GET', 'http://localhost:4000/users');
+
+            httpRequest.send();
+        })();
+
+
+        function loginUser() {
+            document.getElementById('email-msg').innerHTML = '';
+            document.getElementById('password-msg').innerHTML = '';
+
+            var isFormValid = validateEmail() && validatePassword();
+
+            if (isFormValid) {
+
+                var emailInputValue = document.getElementById('email').value;
+                var passwordInputValue = document.getElementById('password').value;
+                var isCredentialsMatching = false;
+
+                users.forEach(function(user) {
+                    if (user.email === emailInputValue && user.password === passwordInputValue) {
+                        isCredentialsMatching = true;
+                    }
+                });
+
+                if (isCredentialsMatching) {
+                    window.alert('Credentials are matching');
+                } else {
+                    window.alert('Incorrect email or password');
+                }
+            }
+        }
+
+        function validateEmail() {
+            var emailInputValue = document.getElementById('email').value;
+            var emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+            if (emailInputValue.length === 0) {
+                document.getElementById('email-msg').innerHTML = 'Email is required';
+                return false;
+            } else if (!emailRegex.test(emailInputValue)) {
+                document.getElementById('email-msg').innerHTML = 'Incorrect email format';
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+
+        function validatePassword() {
+            var passwordInputValue = document.getElementById('password').value;
+
+            if (passwordInputValue.length === 0) {
+                document.getElementById('password-msg').innerHTML = 'Password is required';
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function clearValidationMsg() {
+            document.getElementById('email-msg').innerHTML = '';
+            document.getElementById('password-msg').innerHTML = '';
+        }
+
+      </script>
+</body>
+</html>

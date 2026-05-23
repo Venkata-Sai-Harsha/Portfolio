@@ -1,0 +1,26 @@
+for
+else
+if
+var1
+name
+12
+-432
+1.4
+ 
+{}
+({[]})
+:
+;
+5+7
+7+2=4
+6>2
+5!=6
+3&&5
+var1||5
+a^b
+5>>4
+a->first * b->second
+#include <stdio.h>
+//
+/* */
+-

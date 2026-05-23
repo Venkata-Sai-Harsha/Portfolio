@@ -1,0 +1,71 @@
+HTTPS: Hyper Text Transfer Protocol & Security - It is mean for transfering information from one server to another server.
+
+www - World Wide Web - HTML, CSS & Javascript - Web Application
+
+Frontend - Developing the User Interface
+
+Backend - For building APIs (Application Programming Interface) - Urls
+
+Database - Stores application data permanently
+
+> Using internet we can communicate between frontend, backend & database.
+
+Website - Static content (Eg. Digital Edify, Wikipedia)
+
+Web Application - Static + Dynamic
+
+Stack - Collection of technologies
+
+# 3 Courses - To build web application
+1. MERN Stack
+2. Full Stack with Python
+3. Full Stack with Java
+
+Frontend: 3 Months
+FS Basics - HTML, CSS, Javascript & Bootstrap
+React - Typescript, ES6, React Js & Next Js
+
+Backend - Building APIs
+MERN Stack - Node Js & Express Js - 1 Month
+Full Stack with Python - Python & Django - 2 Months
+Full Stack with Java - Core Java, Advance Java (JSP, JDBC & Servlets, Hibernate), Spring, Spring Boot & Java Micro Services - 3 Months
+
+Database: Storage
+MERN Stack - Mongo db
+Full Stack with Python - My Sql
+Full Stack with Java - My Sql
+
+Frontend
+HTML - Display content (Header, Paragraph, Image, Audio, Video etc...)
+CSS - Adding styles (Color, Font Size, Background color)
+Javascript - Adding functionality
+
+Bootstrap - Responsiveness + Predefined Components.
+
+React Js - FE Library - Increasing the performance & Decreasing the development time.
+
+Library: Collection of resources which are used during software development to build Software application.
+
+Framework: It is a platform that provides a foundation for developing software applications. Think of it as a template of a working program that can be selectively modified by adding code.
+
+API - Application Programming Interface (Url)
+
+
+Database - Storaging application data permanently.
+
+    CRUD Operations - Database Queries - Database Instructions
+
+    C - Create
+    R - Read
+    U - Update
+    D - Delete
+
+JSON (Javascript Object Notation) - Data format - Used to communicate between FE & BE or BE & Db.
+
+Programming Languages
+
+MERN Stack - Javascript
+
+Java - Javascript + Java
+
+Python - Javascript + Python

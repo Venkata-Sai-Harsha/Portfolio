@@ -1,0 +1,58 @@
+AJAX: 
+> Stands for Asynchronous Javascript & XML (JSON)
+> Used for sending information from FE to BE and vice versa.
+> Updates the content of the web page without reloading it.
+> Javascript provides predefined function which is XMLHttpRequest
+> Internally AJAX, uses HTTP Protocol to communicate between applications.
+
+    Hyper Text Transfer Protocol Security
+
+        http
+
+        https
+
+    Creation of object:
+
+        var httpRequest = new XMLHttpRequest();
+
+            httpRequest.readyState - (0 - 4)
+
+                If readyState is 4, indicates response is received in the frontend.
+
+                0 - Request not initialized
+                1 - Server Connection established.
+                2 -	Request received.
+                3 - Processing request.
+                4 - Request finished and response ready.
+
+            httpRequest.onreadystatechange = function() {
+                if (httpRequest.readyState === 4) {
+
+                }
+            }
+
+            httpRequest.statusText
+
+            httpRequest.status
+
+            httpRequest.responseText
+
+    CRUD Operations
+    C - Create - POST
+    R - Read - GET
+    U - Update - PUT
+    D - Delete - DELETE
+
+Users:
+
+    GET
+
+        Get All Users:
+        
+            http://localhost:4000/users
+
+        Get User By Id:
+
+            http://localhost:4000/users/4
+
+            http://localhost:4000/users?name=Priya%20Singh

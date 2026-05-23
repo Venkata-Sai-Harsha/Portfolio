@@ -1,0 +1,26 @@
+Web Storage: Information stored under web in browser is called web storage.
+1. Local Storage: Data stored in this will be available, until we delete it.
+
+    Eg. Gmail, Zoom, 
+
+    localStorage.setItem(key, value);
+
+    localStorage.getItem(key)
+
+    localStorage.removeItem(key)
+
+
+
+2. Session Storage: Data stored in this will be available, until we close the application.
+
+    Eg. Net banking, Financial Applications.
+
+
+    sessionStorage.setItem(key, value);
+
+    sessionStorage.getItem(key)
+
+    sessionStorage.removeItem(key)
+
+
+Access Token - JWT (JSON Web Token) - Login Response - Acts as a credentials(email & password)

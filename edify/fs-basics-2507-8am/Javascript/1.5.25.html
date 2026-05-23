@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.5.25.css"/>
+</head>
+<body>
+    
+    <h2>Company Name: <span id="company-name"></span></h2>
+
+    <div>
+        <label>Email: </label>
+        <input type="email" placeholder="Enter email" id="email" name="email"/>
+    </div>
+
+    <img id="bg-image"/>
+
+    <h2>Movie Name: <span id="movie-name"></span></h2>
+
+    <script>
+
+        // window.alert('First message from Javascript technology');
+
+
+        console.log('Sum of two numbers: ', 90 + 67);
+
+        console.log('Company Name:', 'Digital' + ' ' + 'Edify');
+
+        document.getElementById('company-name').innerHTML = 'Digital Edify';
+
+        // document.getElementById('company-name').style.color = 'blueviolet';
+
+        // document.getElementById('company-name').style.backgroundColor = 'gray';
+
+        document.getElementById('company-name').classList.add('company-name');
+
+        document.getElementById('email').value = 'hr@digitaledify.ai';
+
+        console.log(document.getElementById('email'));
+
+        document.getElementById('bg-image').setAttribute('src', 'https://images.pexels.com/photos/1590549/pexels-photo-1590549.jpeg?auto=compress&cs=tinysrgb&w=800');
+
+        document.getElementById('bg-image').setAttribute('width', '300px');
+
+        var movieName = 'HIT: The Third Case';
+
+        console.log(movieName);
+
+        document.getElementById('movie-name').innerHTML = movieName;
+
+        var languagesPlayed = 'Telugu, Hindi, Malayalam, Tamil, Kannada';
+
+        var likesOfMovie = '186K';
+         
+        var isUserLoggedIn = true;
+
+        var currentScore = 47;
+
+        var noOfWickets = 4;
+
+
+        var mobileName = 'iPhone 16e 128 GB: Built for Apple Intelligence, A18 Chip, Supersized Battery Life, 48MP Fusion. Camera, 15.40 cm (6.1″) Super Retina XDR Display; Black';
+
+        var averageRating = 4.2;
+
+        var imageUrl = 'https://c.media-amazon.com/images/I/61FMZ9rSZUL._AC_UY436_FMwebp_QL65_.jpg';
+
+    </script>
+
+    <script src="1.5.25.js"></script>
+
+</body>
+</html>

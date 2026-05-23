@@ -1,0 +1,36 @@
+Color Codes:
+
+    color: colorname | Hex Codes | RGB | HSL;
+
+    Hex Codes:
+
+        #000000 - #FFFFFF (Hexa Decimal Format)
+
+        00 - First two values - Red
+        00 - Second two values - Green
+        00 - Third two values - Blue
+
+
+        #0b57d0
+
+    RGB: 
+
+        rgb(0, 0, 0) to rgb(255, 255, 255)
+
+    HSL:
+
+        Syntax:
+
+            hsl(0, 50%, 50%);
+
+            0 - 360
+
+                (0 - 120 - Red, 121 - 240 - Green, 241 - 360 - Blue)
+ 
+            0% - 100%
+
+        H - Hue - Color 
+        S - Saturation - Increase the intensity of the color.
+        L - Lightness - Decrease the intensity of the color.
+
+Task: https://preview.colorlib.com/theme/consolution/

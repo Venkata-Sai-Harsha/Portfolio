@@ -1,0 +1,111 @@
+Types of Functions
+1. Function Constructor
+2. Anonymous Function
+3. IIFE (Immediately Invocable Function Expression)
+4. Higher Order Function
+5. Callback Function
+6. Closure
+
+1. Function Constructor
+
+    Syntax:
+
+    Function Definition / Expression
+
+        function functionName() {
+
+            // Statements...
+
+            return value;
+        }
+
+    Function Call:
+
+        functionName()
+
+        functionName()
+
+        functionName()
+
+2. Anonymous Function: An anonymous function in JavaScript is a function that is defined without a name.
+
+It is often used as 
+    an inline function, 
+    passed as an argument to another function (a callback), or 
+    used in Immediately Invoked Function Expressions (IIFEs). 
+
+> Anonymous functions are defined using the function keyword or arrow function syntax (=>) without specifying a function name.
+
+    Syntax:
+
+        var variableName = function() {
+
+            // Statements..
+
+            return value;
+        }
+
+        var objectName = {
+            key1: value1 -> String, Number, Boolean, Array, Object, Function
+
+            key2: function() {
+
+            }
+        }
+
+3. IIFE 
+> (Immediately Invocable Function Expression)
+> An Immediately Invoked Function Expression (IIFE, pronounced "iffy") is a JavaScript 
+function that is defined and executed immediately after its creation.
+
+    Syntax:
+
+        (function() {
+            // Statements...
+            return value;
+        })();
+
+        -> IIFE can be called only for once after it's creation.
+
+        Eg. To load data from Backend API on load of the page.
+
+4. Higher Order Function: In JavaScript, a higher-order function is a function that operates on 
+other functions, either by taking them as arguments or returning them.
+
+    Syntax:
+
+        function function1(func2) {
+
+        }
+
+        function1(function() {});
+
+        function1 - Higher Order Function
+
+        function() {} - Callback Function
+
+> forEach: Iterates to each value present in the array.
+
+    Syntax:
+
+        arrayName.forEach(function() {});
+
+Callback Function: A callback function in JavaScript is a function passed as an argument 
+to another function, which is then invoked or executed inside the outer function, 
+often after a specific task or operation is completed. 
+
+Closure: It's created when a function is defined inside another function (nested function), 
+giving the inner function access to the outer function's variables, including parameters and 
+other defined variables. 
+
+    Syntax:
+
+        function functionName() { - Outer Function
+            var variableName1 = value1;
+
+            var variableName2 = function() { -Inner Function
+                console.log(variableName1)
+            }
+
+
+        }

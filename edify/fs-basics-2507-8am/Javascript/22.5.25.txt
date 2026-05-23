@@ -1,0 +1,49 @@
+Promise: A Promise in JavaScript is an object representing the eventual result of an asynchronous operation. 
+It acts as a placeholder for a value that is not yet available, allowing code to continue execution without waiting 
+for the asynchronous task to complete. 
+
+Promises can be in one of three states: 
+Pending: The initial state, indicating that the asynchronous operation is still in progress.
+Fulfilled: The operation completed successfully, and a result value is available.
+Rejected: The operation failed, and an error or reason for failure is available.
+
+    Syntax:
+
+        var promiseObj = new Promise(function(resolve, reject) {
+            
+            resolve(value) -> Fullfilled
+
+            reject(error) -> Rejected
+        });
+
+        promiseObj.then(function(value) {
+
+        }).catch(function(error) {
+
+        })
+
+        -> If we call resolve function, source code in then block will be executed.
+
+        -> if we call reject function, source code in catch block will be executed.
+
+Fetch: 
+
+    Syntax:
+
+        fetch(url, options)
+
+        var promiseObj = fetch(url, { 
+            method: 'GET/POST/PUT/PATCH/DELETE', 
+            contentType: 'application/json', 
+            body: JSON.strinigify(requestBody) 
+        });
+
+        promiseObj.then(function(response) {
+            return response.json()
+        }).then(function(parsedResponse) {
+
+        }).catch(function(error) {
+
+        });
+
+https://fakestoreapi.com/users

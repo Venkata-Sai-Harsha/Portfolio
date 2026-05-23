@@ -1,0 +1,22 @@
+Types of HTML Elements
+1. Inline Elements: Element which is occupying content size is called inline element.
+
+    Eg. img, anchor, span etc...
+
+2. Block Elements: Element which is occupying parent element size is called block element.
+
+    Eg. div, paragraph, header etc...
+
+Floating Elements: Converts block elements into inline elements.
+
+    Syntax:
+
+        float: left | right
+
+            left - Starts displaying the elements from left side.
+
+            right - Starts displaying the elements from right side.
+
+Task: Design Product Overview of web page
+
+https://preview.colorlib.com/theme/cozastore/

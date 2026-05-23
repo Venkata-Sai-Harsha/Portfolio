@@ -1,0 +1,45 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ol {
+    font-size: 20px;
+}
+li {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+ul li {
+    background-image: url('https://www.digitaledify.ai/images/tick-mark-blu.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px 12px;
+    padding-left: 30px;
+} */
+
+#logo, #menu-links {
+    float: left;
+    text-align: center;
+}
+
+#logo {
+    width: 40%;
+}
+#menu-links {
+    width: 58%;
+}
+#menu-links ul {
+    list-style-type: none;
+}
+
+#menu-links li {
+    float: left;
+    padding-right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}

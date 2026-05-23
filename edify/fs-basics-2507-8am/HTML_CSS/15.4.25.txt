@@ -1,0 +1,35 @@
+Lists: Collection of similar html elements displayed in web page.
+
+Types:
+1. Ordered List: Proper order of every element.
+2. Unordered List: Will have symbolic representation for every element.
+
+1. Ordered List:
+
+    Syntax:
+
+        <ol type="1 | A | a | I | i">
+            <li>Content</li>
+            <li>Content</li>
+            <li>Content</li>
+        </ol>
+
+        ol - ordered list
+        li - list item
+
+2. Unordered List:
+
+    Syntax:
+
+        <ul>
+            <li>Content</li>
+            <li>Content</li>
+            <li>Content</li>
+        </ul>
+        
+
+        CSS:
+        list-style-type: disc | circle | square | none;
+
+Task: Design Navbar of below website.
+https://preview.colorlib.com/theme/menztailor/

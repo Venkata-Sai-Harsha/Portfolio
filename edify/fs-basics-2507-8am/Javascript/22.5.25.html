@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            width: 300px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 180px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .product-card h2 {
+            font-size: 1.1em;
+            margin: 10px 0 8px;
+        }
+
+        .product-card .price,
+        .product-card .category,
+        .product-card .rating {
+            margin: 4px 0;
+            font-weight: 500;
+        }
+
+        .product-card .description {
+            color: #555;
+            font-size: 0.95em;
+            margin: 8px 0;
+        }
+        #add-product-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 30px;
+            
+        }
+        #add-product-container button {
+            background-color: brown;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            cursor: pointer;
+        }
+        #add-product-container a {
+            color: white;
+        }
+        .delete-icon {
+            color: red;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .edit-icon {
+            color: blue;
+            margin-right: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="add-product-container">
+        <button> <a href="./23.5.25.html">+ Add Product</a></button>
+    </div>
+
+    <div class="product-container" id="products-container">
+
+    </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Product</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Are you sure, you want to delete this user.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger" onclick="deleteProduct()">Delete</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        var loginPromiseObj = new Promise(function (resolve, reject) {
+            var isCrentialMatching = false;
+
+            if (isCrentialMatching) {
+                resolve('Valid credentials');
+            } else {
+                reject('Invalid credentials');
+            }
+        });
+
+        loginPromiseObj.then(function (result) {
+            console.log(result);
+        }).catch(function (error) {
+            console.log(error);
+        });
+
+        var products = [];
+
+        function getAllProducts() {
+            fetch('http://localhost:4000/products', {
+                method: 'GET'
+            }).then(function (response) {
+                return response.json();
+            }).then(function (parsedResponse) {
+                products = parsedResponse;
+                displayProducts();
+            }).catch(function (error) {
+                console.log(error);
+            });
+        }
+
+        getAllProducts();
+
+        function displayProducts() {
+            var productsContainerDiv = document.getElementById('products-container');
+            var productsStr = '';
+
+            products.forEach(function(product) {
+                productsStr += `
+                    <div class="product-card">
+                        <p>
+                            <a href="./23.5.25.html?productId=${product.id}"><i class="fa-solid fa-pen-to-square edit-icon"></i></a>
+                            <i class="fa-solid fa-trash delete-icon" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="getProductId('${product.id}')"></i>
+                        </p>
+                        <img src="${product.image}" alt="Fjallraven Backpack" width="150px">
+                        <h2>${product.title}</h2>
+                        <p class="price"><strong>Price:</strong> $${product.price}</p>
+                        <p class="category"><strong>Category:</strong> ${product.category}</p>
+                        <p class="description">${product.description}</p>
+                        <p class="rating"><strong>Rating:</strong> ⭐ ${product.rating.rate} (${product.rating.count} reviews)</p>
+                    </div>
+                `;
+            });
+
+            productsContainerDiv.innerHTML = productsStr;
+        }
+        var productId = null;
+
+        function getProductId(id) {
+            productId = id;
+        }
+
+        function deleteProduct() {
+
+            fetch('http://localhost:4000/products/' + productId, {
+                method: 'DELETE'
+            }).then(function (response) {
+                return response.json();
+            }).then(function (parsedResponse) {
+                window.alert('Deleted product successfully');
+                var modalElement = document.getElementById('deleteModal');
+                var modalInstance = bootstrap.Modal.getInstance(modalElement);
+                modalInstance.hide();
+                getAllProducts();
+
+            }).catch(function (error) {
+                console.log(error);
+            });
+
+        }
+
+    </script>
+</body>
+
+</html>

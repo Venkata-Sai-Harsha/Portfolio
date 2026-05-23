@@ -1,0 +1,128 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+.header {
+    float: left;
+}
+#company-name{
+    margin-left: 50px;
+    width: 15%;
+}
+#navbar{
+    width: 50%;
+    padding: 20px;
+}
+#navbar a, .header span{
+    margin-top: 25px;
+    margin-right: 40px;
+    width: 50%;
+    color: #333333;
+}
+/* #search, #cart, #like{
+    float: right;
+    width: 7%;
+    margin: 15px 0px ;
+    background-color: #333333;
+}
+#like{
+    margin-top: 20px;
+    margin-right: 100px;
+    color: #333333;
+} */
+#header-container{
+    background-image: url("https://preview.colorlib.com/theme/cozastore/images/slide-02.jpg.webp");
+    background-position: center center;
+}
+#collection{
+    padding: 300px 200px;
+    line-height: 20px;
+}
+#collection h3{
+    font-size: 50px;
+}
+#collection h2{
+    font-size: 80px;
+}
+#collection a{
+    border: 1px solid #717FE0;
+    color: white;
+    background-color: #717FE0;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.gender{
+    float: left;
+    width: 12%;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 100px 100px 50px;
+    border: 1px solid #E6E6E6;
+}
+#women{
+    background-image: url("https://preview.colorlib.com/theme/cozastore/images/banner-01.jpg.webp");
+    margin: 10px 20px 10px 200px;
+}
+#men{
+    background-image: url("https://preview.colorlib.com/theme/cozastore/images/banner-02.jpg.webp");
+    margin: 10px 20px;
+}
+#accessories{
+    background-image: url("https://preview.colorlib.com/theme/cozastore/images/banner-03.jpg.webp");
+    margin: 10px 200px 10px 20px;
+}
+#product-overview{
+    margin:20px 200px 20px 200px;
+    float: left;
+    width: 100%;
+}
+#product-overview a{
+    color: #938888;
+}
+#products{
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 100%;
+}
+#product-container{
+    margin: 0px 200px 0px 0px;
+}
+.pp img{
+    width: 100%;
+}
+.pp{
+    margin: 0px 0px 0px 20px;
+    width: 20%;
+    float: left;
+}
+.pp p{
+    color: #666666;
+    line-height: 2px;
+}
+#load-more{
+    line-height: 200px;
+    margin: 150px 150px;
+    text-align: center;
+    padding: 10px 20px;
+}
+#load-more a{
+    border: 1px solid #E6E6E6;
+    background-color: #E6E6E6;
+    color: black;
+    padding: 10px 20px;
+}
+.icons{
+    margin-top: 10px;
+    float: right;
+}
+.icons img{
+    margin-top: 5px;
+    float: right;
+    width: 100%;
+}
+.icon{
+    float: left;
+    width: 70%;
+    line-height: 5px;
+}

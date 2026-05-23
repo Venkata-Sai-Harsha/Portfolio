@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="8.5.25.css"/>
+</head>
+<body>
+
+    <div id="categories">
+        <div class="category" onclick="onSelectCategory('All')">
+            <div>
+                <img src="https://cdn.zeptonow.com/production/tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/102e9688-c220-4a0e-bc35-0f0b16de6ad1.png"/>
+            </div>
+            <h3>All</h3>
+        </div>
+        <div class="category" onclick="onSelectCategory('Fresh Vegetables')">
+            <div>
+                <img src="https://cdn.zeptonow.com/production/tr:w-90,ar-160-161,pr-true,f-auto,q-80/cms/sub_category/694c07e0-542b-49db-a596-b1f4f4935342.png"/>
+            </div>
+            <h3>Fresh Vegetables</h3>
+        </div>
+        <div class="category" onclick="onSelectCategory('Mangoes & Melons')">
+            <div>
+                <img src="https://cdn.zeptonow.com/production/tr:w-90,ar-128-122,pr-true,f-auto,q-80/cms/sub_category/711ca0dc-e889-419a-8ec1-32ed5be3b026.png"/>
+            </div>
+            <h3>Mangoes & Melons</h3>
+        </div>
+        <div class="category" onclick="onSelectCategory('Fresh Fruits')">
+            <div>
+                <img src="https://cdn.zeptonow.com/production/tr:w-90,ar-160-161,pr-true,f-auto,q-80/cms/sub_category/7e51d0f6-ee57-42f3-98f9-945033ad3e5f.png"/>
+            </div>
+            <h3>Fresh Fruits</h3>
+        </div>
+        <div class="category" onclick="onSelectCategory('Flowers & Leaves')">
+            <div>
+                <img src="https://cdn.zeptonow.com/production/tr:w-90,ar-120-120,pr-true,f-auto,q-80/cms/sub_category/bd21967b-db0e-4cc5-9ea2-5ba1571d58d1.png"/>
+            </div>
+            <h3>Flowers & Leaves</h3>
+        </div>
+    </div>
+
+    <script>
+
+        function onSelectCategory(selectedCategory) {
+            var categoryDivs = document.getElementsByClassName('category');
+
+            categoryDivs[0].classList.remove('selected-category');
+            categoryDivs[1].classList.remove('selected-category');
+            categoryDivs[2].classList.remove('selected-category');
+            categoryDivs[3].classList.remove('selected-category');
+            categoryDivs[4].classList.remove('selected-category');
+
+            switch(selectedCategory) {
+                case 'All': {
+                    categoryDivs[0].classList.add('selected-category');
+                    break;
+                }
+                case 'Fresh Vegetables': {
+                    categoryDivs[1].classList.add('selected-category');
+                    break;
+
+                } case 'Mangoes & Melons': {
+                    categoryDivs[2].classList.add('selected-category');
+                    break;
+
+                } case 'Fresh Fruits': {
+                    categoryDivs[3].classList.add('selected-category');
+                    break;
+                } case 'Flowers & Leaves': {
+                    categoryDivs[4].classList.add('selected-category');
+                    break;
+
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>

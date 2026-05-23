@@ -1,0 +1,31 @@
+Event: An event in JavaScript represents an action or occurrence that happens in the browser.
+
+    Eg. 
+        > User clicking on a button (onclick)
+        > A page finished loading. (onload)
+        > User entering a key in input field. (onkeyup)
+        > Changing value in select dropdown. (onchange)
+
+> Events are used to trigger JavaScript code that responds to these actions.
+
+Function: A JavaScript function is a block of code designed to perform a specific task.
+>  It is a fundamental building block in JavaScript, allowing for code reuse, modularity, and organization.
+> Functions can take inputs (parameters), perform actions, and return outputs. 
+
+    Syntax:
+
+        Function Definition: It will be execute, only when function is called.
+
+                                        Inputs
+            function functionName(parameter1, parameter2, ..., parameterN) {
+                // Statements... -> Actions to perform
+
+                return value; -> Output
+            } 
+
+        Function Call:
+
+            functionName(value1, value2, ..., valueN);
+
+
+    return -> Output of function definition -> Returns output from function definition to function call.

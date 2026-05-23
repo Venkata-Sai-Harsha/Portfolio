@@ -1,0 +1,135 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+  }
+  
+  .top-navbar {
+    display: flex;
+    background-color: #06112a;
+  }
+  
+  .section,
+  .navv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .section {
+    margin-left: 50px;
+    padding: 10px 5px 15px 30px;
+  }
+  
+  .section i {
+    color: white;
+    border: 1px solid #182239;
+    background-color: #06112a;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  #matter span {
+    color: #5ca21d;
+  }
+  
+  #matter p {
+    font-size: 13px;
+  }
+  
+  .pp {
+    color: #808286;
+    line-height: 5px;
+    font-size: 13px;
+  }
+  
+  #low-navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* z-index: 100; */
+    padding: 0px 0;
+  }
+  
+  .navv ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navv ul li {
+    list-style: none;
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .navv ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navv.brand h3 {
+    margin-left: 50px;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 0;
+  }
+  
+  .navv.brand h4 {
+    margin-left: 50px;
+    font-size: 15px;
+    color: #5ea51d;
+    font-weight: normal;
+    margin-top: 5px;
+  }
+  
+  #submit {
+    color: white;
+    border: 1px solid #5ea51d;
+    background-color: #5ea51d;
+    padding: 10px;
+    margin: 0px 100px;
+    text-decoration: none;
+  }
+  
+  #main {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://preview.colorlib.com/theme/oakberry/images/bg_3.jpg.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    padding: 200px 30rem;
+    text-align: center;
+  }
+  
+  #main h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+  
+  #main p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  #learn-more {
+    color: white;
+    border: 1px solid #5ea51d;
+    background-color: #5ea51d;
+    padding: 10px;
+    margin: 100px auto;
+    width: 22%;
+    text-align: center;
+    cursor: pointer;
+  }
+  

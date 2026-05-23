@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var supportTickets = [
+            {
+                id: 1,
+                user: {
+                    name: "Rahul Verma",
+                    email: "rahul.verma@example.in",
+                },
+                subject: "Payment failed but amount deducted",
+                description: "I paid via UPI, amount was deducted but the order failed.",
+                status: "open",
+                priority: "high",
+                createdAt: "2025-05-28T10:30:00+05:30",
+            },
+            {
+                id: 2,
+                user: {
+                    name: "Sneha Reddy",
+                    email: "sneha.reddy@example.in",
+                },
+                subject: "App not opening",
+                description: "The app keeps crashing on my Redmi Note 11 after update.",
+                status: "in_progress",
+                priority: "high",
+                createdAt: "2025-05-27T14:15:00+05:30",
+            },
+            {
+                id: 3,
+                user: {
+                    name: "Amit Joshi",
+                    email: "amit.joshi@example.in",
+                },
+                subject: "Order delayed",
+                description: "My grocery order is delayed beyond the promised delivery time.",
+                status: "open",
+                priority: "medium",
+                createdAt: "2025-05-26T09:00:00+05:30",
+            },
+            {
+                id: 4,
+                user: {
+                    name: "Priya Sharma",
+                    email: "priya.sharma@example.in",
+                },
+                subject: "Need GST invoice",
+                description: "Please provide a GST invoice for my last purchase.",
+                status: "resolved",
+                priority: "low",
+                createdAt: "2025-05-24T18:45:00+05:30",
+                createdAtFormatted: '24/05/2025 18:45:00'
+            },
+        ];
+
+        // for (var i = 0; i < supportTickets.length; i++) {
+        //     console.log(supportTickets[i].user.name);
+        //     console.log(supportTickets[i].subject)
+        //     console.log(supportTickets[i].description)
+        //     console.log('------------------------------------------')
+        // }
+
+        supportTickets.forEach(function (ticketInfo) {
+            console.log(ticketInfo.user.name);
+            console.log(ticketInfo.subject)
+            console.log(ticketInfo.description)
+            console.log('------------------------------------------')
+        });
+
+        var modifiedSupportTickets = supportTickets.map(function (ticketInfo) {
+            var ticket = Object.assign({}, ticketInfo);
+            var dateObj = new Date(ticket.createdAt);
+            ticket.createdAtFormatted = `${dateObj.getDate()}/${dateObj.getMonth() + 1}/${dateObj.getFullYear()} ${dateObj.getHours()}:${dateObj.getMinutes()}:${dateObj.getSeconds()}`;
+            return ticket;
+        });
+
+        console.log(supportTickets);
+
+        var filteredSupportTickets = supportTickets.filter(function (ticket) {
+            return ticket.status === 'open';
+        });
+
+        console.log(filteredSupportTickets);
+
+        var ticketInfo = supportTickets.find(function (ticket) {
+            return ticket.id === 4;
+        });
+
+        console.log(ticketInfo);
+
+        var products = [
+            {
+                id: 1,
+                name: "Tata Salt",
+                category: "Groceries",
+                price: 25,
+                quantity: "1 kg",
+                inStock: true,
+                imageUrl: "https://example.com/images/tata-salt.jpg",
+            },
+            {
+                id: 2,
+                name: "Aashirvaad Atta",
+                category: "Groceries",
+                price: 240,
+                quantity: "5 kg",
+                inStock: true,
+                imageUrl: "https://example.com/images/aashirvaad-atta.jpg",
+            },
+            {
+                id: 3,
+                name: "Amul Butter",
+                category: "Dairy",
+                price: 55,
+                quantity: "100 gm",
+                inStock: false,
+                imageUrl: "https://example.com/images/amul-butter.jpg",
+            },
+            {
+                id: 4,
+                name: "Maggi Noodles",
+                category: "Instant Food",
+                price: 14,
+                quantity: "70 gm",
+                inStock: true,
+                imageUrl: "https://example.com/images/maggi.jpg",
+            },
+            {
+                id: 5,
+                name: "Surf Excel Matic",
+                category: "Cleaning",
+                price: 195,
+                quantity: "1 kg",
+                inStock: true,
+                imageUrl: "https://example.com/images/surf-excel.jpg",
+            },
+        ];
+
+        var totalBillAmount = products.reduce(function(acculumator, product) {
+            return acculumator + product.price;
+        }, 0);
+
+        console.log(totalBillAmount);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+Control Structures
+> Conditional Statements: A conditional statement in JavaScript is a programming construct 
+that enables the execution of different code blocks based on whether a specified condition 
+is true or false. 
+
+Types
+1. If
+2. If-else
+3. If-else-if (More than 2 Scenarios)
+4. Switch
+5. Ternary Operator 
+
+If: If condition is true, statements present under it will be executed. (One Scenario)
+
+    Syntax: 
+
+        if (condition) {
+            // Statements...
+        }
+
+If-else: (Two Scenarios) - If condition is true, statements present in "if" block will executed 
+and If condition is false, statements present in "else" block will execute.
+
+    Syntax:
+
+        if (condition) {
+            // Statements...
+        } else {
+            // Statements...
+        }
+
+If-else-if: 
+
+    Syntax:
+
+        if (condition) {
+            // Statements...
+        } else if (condition) {
+            // Statements...
+        } else if (condition) {
+            // Statements...
+        } else if (condition) {
+            // Statements...
+        } else {
+            // Statements...
+        }
+
+> Looping Statements

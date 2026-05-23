@@ -1,0 +1,70 @@
+To configure google fonts
+
+Library Link:
+https://fonts.google.com/
+
+Step1: Add link tag in head tag of the html file.
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+Step2: Add font family in the css file for body tag.
+
+    font-family: "Roboto", sans-serif;
+
+Step3: To distinguish between normal and bold.
+
+    font-weight: 100 - 900
+
+Grid: To design a 2 dimensional layout we use Grid Concept.
+
+> It displays information in rows and columns format.
+
+    Syntax:
+
+        display: grid;
+
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+
+> grid-template-rows: Tells how many no of rows needs to be displayed.
+
+    Syntax:
+
+        grid-template-rows: 100px 100px 200px;
+
+> grid-template-column: Tells how many no of columns needs to be displayed.
+
+    Syntax:
+
+        grid-template-columns: 100px 100px 200px;
+
+> grid-row-start
+
+> grid-column-start
+
+> grid-row-end
+
+> grid-column-end
+
+> grid-row
+
+> grid-column
+
+> grid-area
+
+> row-gap
+
+> column-gap
+
+> gap
+
+> align-items
+
+> justify-items
+
+Task: Design Web Page Layout using Grid.
+
+    https://mdbootstrap.com/

@@ -1,0 +1,29 @@
+String & Date Methods
+
+String Methods
+Length
+indexOf(string)
+lastIndexOf(string)
+slice(start, end)
+substr(start, len)
+toUpperCase()
+toLowerCase()
+concat(“ ”, str)                   
+charAt(index);
+
+Date Methods:
+getDay()
+getDate()
+getMonth()
+getFullYear()
+getHours()
+getMinutes()
+getSeconds()
+
+setDay(value)
+setDate(value)
+setMonth(value)
+setFullYear(value)
+setHours(value)
+setMinutes(value)
+setSeconds(value)

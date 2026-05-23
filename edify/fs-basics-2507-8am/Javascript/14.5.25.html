@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var str = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Lorem Ipsum has been the industry's standard dummy text";
+
+        console.log(str.length);
+
+        console.log(str.indexOf('Lorem'));
+
+        console.log(str.lastIndexOf('Lorem'));
+
+        console.log(str.slice(0, 5));
+
+        console.log(str.substr(0, 5));
+
+        console.log(str.slice(0, 5).toUpperCase());
+
+        console.log(str.toLowerCase());
+
+        var firstname = 'K';
+        var middlename = 'Harish';
+        var lastname = 'Kumar';
+
+        var fullname = firstname.concat(' ', middlename, ' ', lastname);
+
+        console.log(fullname);
+
+        console.log(str.charAt(2));
+
+        var mobileno = '9032345245';
+
+        // +91 903 234 5245
+
+        var formattedMobileno = '+91'.concat(' ', mobileno.slice(0, 3), ' ', mobileno.slice(3, 6), ' ', mobileno.slice(6,));
+
+        console.log(formattedMobileno);
+
+        console.log(mobileno.split(''));
+
+        var currentDateObj = new Date();
+
+        console.log(currentDateObj);
+
+        var dateObj = new Date('2024-08-04 00:00:00');
+
+        console.log(dateObj);
+
+        console.log(dateObj.getDay());
+
+        var daysMapping = {
+            0: 'Sunday',
+            1: 'Monday',
+            2: 'Tuesday',
+            3: 'Wednesday',
+            4: 'Thursday',
+            5: 'Friday',
+            6: 'Saturday'
+        };
+
+        var daysMappingArr = [
+            'Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday'
+        ];
+
+        console.log(daysMapping[dateObj.getDay()]);
+
+        console.log(daysMapping[currentDateObj.getDay()])
+
+        console.log(currentDateObj.getDay());
+
+        var dateStr = `${currentDateObj.getMonth() + 1}-${currentDateObj.getDate()}-${currentDateObj.getFullYear()} ${currentDateObj.getHours()}:${currentDateObj.getMinutes()}:${currentDateObj.getSeconds()}`;
+
+        console.log(dateStr);
+
+
+        function timeSince(date) {
+
+            var seconds = Math.floor((new Date() - date) / 1000);
+
+            var interval = seconds / 31536000;
+
+            if (interval > 1) {
+                return Math.floor(interval) + " years ago";
+            }
+            interval = seconds / 2592000;
+            if (interval > 1) {
+                return Math.floor(interval) + " months ago";
+            }
+            interval = seconds / 86400;
+            if (interval > 1) {
+                return Math.floor(interval) + " days ago";
+            }
+            interval = seconds / 3600;
+            if (interval > 1) {
+                return Math.floor(interval) + " hours ago";
+            }
+            interval = seconds / 60;
+            if (interval > 1) {
+                return Math.floor(interval) + " minutes ago";
+            }
+            return Math.floor(seconds) + " seconds ago";
+        }
+
+        var transactions = [
+            { id: 1, user: 'Alice', amount: 42.99, timestamp: '2025-05-13T10:00:00Z' },
+            { id: 2, user: 'Bob', amount: 17.50, timestamp: '2025-05-13T11:05:30Z' },
+            { id: 3, user: 'Charlie', amount: 88.00, timestamp: '2025-02-15T08:22:10Z' },
+            { id: 4, user: 'Diana', amount: 9.75, timestamp: '2025-05-11T10:45:00Z' },
+        ];
+
+        for (var i = 0; i < transactions.length; i++) {
+
+            console.log(new Date(transactions[i].timestamp));
+
+            var formattedTimestamp = timeSince(new Date(transactions[i].timestamp));
+
+            transactions[i].formattedTimestamp = formattedTimestamp;
+        }
+
+        console.log(transactions);
+    </script>
+</body>
+
+</html>

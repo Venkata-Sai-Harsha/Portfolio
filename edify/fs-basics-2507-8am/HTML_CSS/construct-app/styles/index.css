@@ -1,0 +1,179 @@
+#home {
+    color: rgb(245, 177, 20);
+}
+#trusted-construction {
+    background-image: url('https://preview.colorlib.com/theme/construct/img/slider-1.jpg.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 13rem 5rem;
+    position: relative;
+}
+#trusted-construction h1 {
+    font-size: 45px;
+    width: 45%;
+}
+#trusted-construction h4 {
+    width: 45%;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+#trusted-construction div {
+    display: flex;
+    background-color: rgb(245, 177, 20);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    position: absolute;
+    top: 90%;
+    width: 70%;
+    left: 14%;
+}
+
+#trusted-construction a {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 14px;
+}
+#services {
+    text-align: center;
+    margin-top: 7rem;
+    padding: 0px 9rem 3rem 9rem;
+}
+#services hr {
+    width: 4%;
+    text-align: center;
+    border-color: rgb(245, 177, 20);
+}
+#services > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0px;
+    column-gap: 10px;
+}
+.service {
+    padding: 20px;
+    border-bottom: 5px solid white;
+    cursor: pointer;
+}
+.service:hover {
+    border-color:rgb(245, 177, 20);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#view-all-services, #view-all-works {
+    background-color: rgb(245, 177, 20);
+    color: white;
+    padding: 10px 7rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+#recent-works {
+    text-align: center;
+}
+#recent-works {
+    padding: 4rem 0px;
+}
+#recent-works h1, #company-news h1, #testimonials h1 {
+    font-size: 45px;
+    text-align: center;
+}
+#recent-works p, #company-news > p, #testimonials > p {
+    font-size: 17px;
+    width: 50%;
+    margin: auto;
+    line-height: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.recent-works {
+    display: flex;
+    padding: 2rem 15rem;
+}
+.recent-works div {
+    flex: 1;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+
+}
+.recent-works img {
+    width: 100%;
+}
+.recent-works div:hover img {
+    transform: scale(1.05);
+}
+#company-news {
+    margin-bottom: 4rem;
+}
+#company-news > div {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding: 0px 4rem;
+}
+.media {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.media img {
+    width: 100%;
+}
+.media div {
+    padding: 20px;
+}
+#testimonials {
+    text-align: center;
+    padding: 3rem 8rem;
+}
+#testimonials > div {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.testimonial {
+    margin-top: 30px;
+}
+.testimonial img {
+    width: 8rem;
+    border-radius: 50%;
+}
+.testimonial h2 {
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 20px;
+}
+footer {
+    display: flex;
+    padding: 3rem 10rem;
+    background-color: rgb(242, 242, 242);
+    column-gap: 20px;
+}
+footer p {
+    line-height: 25px;
+}
+footer div {
+    flex: 1;
+}
+footer ul {
+    padding-left: 0px;
+}
+footer li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+footer a, #brand {
+    text-decoration: none;
+    color: rgb(245, 178, 22);
+}
+footer i {
+    color: rgb(245, 178, 22);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(209, 209, 209);
+    margin-right: 15px;
+}

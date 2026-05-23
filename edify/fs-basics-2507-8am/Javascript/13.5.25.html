@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var users = ['Ravi Krishna', 'Shiva Teja', 'Jagadeesh'];
+
+        users.push('Pradeep');
+
+        users.push('Harish');
+
+        users.pop();
+
+        // users.pop();
+
+        // users.pop();
+
+        users.splice(1, 1, 'Rajesh', 'Kumar');
+
+        var users2 = ['Chaitanya', 'Krishna', 'Susmitha', 'Vagdevi'];
+
+        var users3 = ['Sravanthi', 'Prem Kumar'];
+
+        console.log(users);
+
+        var mergedUsers = users.concat(users2, users3);
+
+        console.log(mergedUsers);
+
+        var sortedUsers = mergedUsers.sort();
+
+        console.log('Sorted Users: ', sortedUsers);
+
+        var descSortedUsers = mergedUsers.sort().reverse();
+
+        console.log('Descending Sorted Users: ', sortedUsers);
+
+        var isUserExist = mergedUsers.includes('Ganesh');
+
+        console.log('Is User exist: ', isUserExist);
+
+        var usersArr = [
+            { id: 1, name: 'Karthik', email: 'karthik.k@gmail.com', age: 28, gender: 'Male', phone: '9876543210', isActive: true },
+            { id: 2, name: 'Ayesha', email: 'ayesha.a@gmail.com', age: 24, gender: 'Female', phone: '9876543211', isActive: true },
+            { id: 3, name: 'Rohan', email: 'rohan.r@gmail.com', age: 30, gender: 'Male', phone: '9876543212', isActive: false },
+            { id: 4, name: 'Meera', email: 'meera.m@gmail.com', age: 26, gender: 'Female', phone: '9876543213', isActive: true },
+            { id: 5, name: 'Vikram', email: 'vikram.v@gmail.com', age: 35, gender: 'Male', phone: '9876543214', isActive: true },
+            { id: 6, name: 'Sneha', email: 'sneha.s@gmail.com', age: 27, gender: 'Female', phone: '9876543215', isActive: false },
+            { id: 7, name: 'Ankit', email: 'ankit.a@gmail.com', age: 29, gender: 'Male', phone: '9876543216', isActive: true },
+            { id: 8, name: 'Priya', email: 'priya.p@gmail.com', age: 25, gender: 'Female', phone: '9876543217', isActive: true },
+            { id: 9, name: 'Dev', email: 'dev.d@gmail.com', age: 31, gender: 'Male', phone: '9876543218', isActive: false },
+            { id: 10, name: 'Nisha', email: 'nisha.n@gmail.com', age: 22, gender: 'Female', phone: '9876543219', isActive: true }
+        ];
+
+        var sortedUsersByName = usersArr.sort(function(a, b) {
+            if (a.name < b.name) {
+                return -1;
+            } else if (a.name > b.name) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+
+        console.log(sortedUsersByName);
+
+        var sortedUsersByAge = usersArr.sort(function(a, b) {
+            if (a.age < b.age) {
+                return -1;
+            } else if (a.age > b.age) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
+
+        console.log(sortedUsersByAge);
+
+        var userInfo = { id: 6, name: 'Sneha', email: 'sneha.s@gmail.com', age: 27, gender: 'Female', phone: '9876543215', isActive: false };
+
+        console.log('Keys', Object.keys(userInfo));
+
+        console.log('Values', Object.values(userInfo));
+
+        // var freezedUserInfo = Object.freeze(userInfo);
+
+        // freezedUserInfo.id = 10;
+
+        // freezedUserInfo.city = 'Hyderabad';
+
+        // delete freezedUserInfo.email;
+
+        // console.log(freezedUserInfo);
+
+        var copiedUserInfo = Object.assign({}, userInfo);
+
+        copiedUserInfo.id = 9;
+
+        console.log('UserInfo', userInfo);
+
+        console.log('Copied UserInfo', copiedUserInfo);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+/* ProductDetailsPage.css */
+  
+  h2 {
+    color: #fafafa;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  h3 {
+    color: #fafafa;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+  
+  p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+  }
+
+  .black{
+    color: #555;
+  }
+  

@@ -1,0 +1,59 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blog img {
+    width: 100%;
+}
+
+#our-blog h1, #our-blog h4 {
+    text-align: center;
+}
+
+.blog {
+    /* border: 1px solid black; */
+    margin: 10px;
+    float: left;
+    width: 23.65%;
+}
+
+.blog div {
+    padding: 15px;
+}
+
+#blog1 {
+    float: left;
+}
+
+#blog2 {
+    float: right;
+}
+
+#about-us img {
+    width: 100%;
+}
+
+#about-us-image {
+    float: left;
+    width: 33%;
+    padding: 20px;
+}
+#about-us-content {
+    float: left;
+    width: 61.5%;
+    padding: 20px;
+}
+
+#about-us-content img {
+    height: 25rem;
+}
+
+#about-us-content p {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+}
+
+#about-us-experience div {
+    float: left;
+    width: 22%;
+    padding: 10px;
+}

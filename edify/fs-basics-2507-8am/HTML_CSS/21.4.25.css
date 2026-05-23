@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10rem;
+    align-items: center;
+    background-color: #589167;
+    color: white;
+}
+#top-navbar i {
+    padding: 0px 15px;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10rem;
+    margin: auto;
+    align-items: center;
+    background-color: white;
+    width: 85%;
+    /* position: fixed;
+    top: 0px;
+    left: 0px; */
+    position: sticky;
+    left: 0px;
+    top: 0px;
+}
+#menu-links ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin-top: 18px;
+}
+#menu-links ul li {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 12px;
+    cursor: pointer;
+}
+#menu-links li:hover {
+    color: #589167;
+}
+#counseling {
+    background-image: url('https://preview.colorlib.com/theme/counselor/images/bg_1.jpg.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#counseling-for-your-better-life {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15rem 0px;
+}
+#counseling-for-your-better-life h1 {
+    font-size: 55px;
+    margin: 10px 0px;
+}
+#counseling-for-your-better-life p {
+    font-size: 20px;
+    width: 70%;
+    line-height: 25px;
+}
+#counseling-for-your-better-life i {
+    color: #589167;
+    font-size: 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 50%;
+}
+#contact-us {
+    background-color: #589167;
+    color: white;
+    padding: 18px 30px;
+}
+#read-more {
+    background-color: white;
+    padding: 18px 30px;
+    color: #589167;
+}
+#message-icon {
+    background-color: #4488ff;
+    border-radius: 50%;
+    padding: 15px;
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+}
+
+#features {
+    background-color: #589167;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    top: 41rem;
+    left: 0px;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 30px;
+}
+.feature i {
+    font-size: 4rem;
+    margin: 25px 25px 0px 0px;
+}
+
+#services {
+    padding: 100px;
+}

@@ -1,0 +1,90 @@
+Advanced Tags - Multimedia, Semantic elements. Embedding External
+Content (iframe)
+
+Multimedia Tags:
+1. Audio: Plays audio in the web page.
+
+    Syntax:
+
+        <audio controls autoplay>
+            <source src="filename.mp3"/>
+        </audio>
+
+        controls - Shows all the available controls like play/pause button, volume button etc...
+        autoplay - Plays audio automatically on load of the web page.
+
+2. Video: Plays video in the web page.
+
+    Syntax:
+
+        <video controls autoplay muted>
+            <source src="filename.mp4"/>
+        </video>
+
+        controls - Shows all the available controls like play/pause button, volume button etc...
+        autoplay - Plays audio automatically on load of the web page.
+        muted - Mutes the video.
+        loop - Plays the same video file for multiple times.
+
+3. Iframe: We can embedd external content into web page.
+
+    Eg. Youtube Video
+
+        Syntax:
+
+            <iframe src=""></iframe>
+
+            https://www.youtube.com/embed/qz0aGYrrlhU
+                
+                ?si=WB7hqwM8QoXWE3v0&autoplay=1&mute=1&controls=0
+
+                autoplay = 1 - automatically plays the file
+
+                mute = 1 - Mutes the video
+
+                controls = 0 - Hides the controls of the video
+
+
+                ?key1=value1&key2=value2&key3=value3 - Url Parameters
+
+Semantic Tags:
+
+    <nav></nav> - Navbar
+
+    <header></header> - Header
+
+    <section></section> - For a portion of web page.
+
+    <footer></footer> - Footer
+
+    <aside></aside> - Side Navbar
+
+Transform: Using transform, we can move a html element, rotate, change size & skew the elements.
+
+    Syntax:
+
+        Movement:
+
+            transform: translate(x-axis, y-axis);
+
+                transform: translateX(value);
+
+                transform: translateY(value);
+
+        Rotation:
+
+            transform: rotate(30deg);
+
+        Size:
+
+            transform: scale(1);
+
+        Skew:
+
+            transform: skew(20deg, 20deg);
+
+                transform: skewX(20deg);
+
+                transform: skewY(20deg);
+
+Task: Design video or audio player using Multimedia tags.

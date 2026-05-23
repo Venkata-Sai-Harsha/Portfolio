@@ -1,0 +1,73 @@
+HTML: Displaying content in web page.
+
+CSS: Designing Layouts & Applying styles to HTML Content.
+
+Javascript: Adds functionality / behaviour to HTML Content.
+
+Programming Language: It's a set of rules and instructions that the computer can understand and follow to execute a desired action. 
+
+> JavaScript (/ˈdʒɑːvəskrɪpt/ ⓘ), often abbreviated as JS.
+> It is a programming language and core technology of the World Wide Web (www), alongside HTML and CSS. 
+> 99% of websites use JavaScript on the client side for webpage behavior. (Angular/React Js/Vue Js)
+> Web browsers have a dedicated JavaScript engine that executes the client side (frontend) code.
+
+    JavaScript Engines 
+    V8 - Google Chrome
+    Javascript Core - Safari
+    Spider Monkey - Mozilla Firefox
+    Chakra - Microsoft Edge
+
+> Browsers follow ECMA Script Organization instructions to build JavaScript engine in every browser.
+
+> It was first introduced in 1995.
+
+> Latest version of JavaScript is ECMAScript 2024.
+
+> It is a high level language (User understandable language) - Complier can understand high level language.
+
+> JavaScript follows ECMA Script Standard.
+
+1. Internal JavaScript: Writing the Javascript inside the script tag of HTML file.
+
+    Syntax:
+
+        <script>
+
+            // JavaScript source code here...
+
+        </script>
+
+2. External JavaScript: Writing JavaScript as a seperate file.
+
+    Syntax:
+
+        filename.js
+
+
+        
+        filename.html
+
+        <body>
+
+            <script src="filename.js"></script>
+
+        </body>
+
+
+
+Output Parameters
+1. window.alert(message) - Display message in format of alert.
+2. console.log(message) - Displays message in browser's console. (Used by developers to debug the source code)
+3. document.getElementById(id).innerHTML = value;
+
+Variable: A variable in JavaScript is a named storage location that holds a value. 
+> It acts as a container for data that can be used and modified throughout a program.
+
+    Syntax:
+
+        var variableName = value;
+
+
+    Note: Variable name should be in Camel Case. (Starting from second word first letter should be capital letter).
+
+Task: Design mobile layout and map data using JavaScript.

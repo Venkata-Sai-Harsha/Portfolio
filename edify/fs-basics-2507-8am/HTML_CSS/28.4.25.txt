@@ -1,0 +1,19 @@
+Path: Folder structure of the file.
+
+Absolute Path:
+
+    /Volumes/DL/DLA/fs-basics-2507-8am/construct-app/styles/index.css
+
+Relative Path:
+
+    To navigate from top to bottom, we use foldername
+
+    To navigate from bottom to top, we use ../
+
+    ./ - Current folder
+
+    ../ - It's parent folder
+
+    ../../ - It points to grand parent folder
+
+    ../../../ - Great grand parent folder.

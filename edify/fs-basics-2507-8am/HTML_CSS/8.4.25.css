@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    font-family: Arial;
+}
+#fundamentals, #machine-learning {
+    border: 4px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+#python-course {
+    color: black;
+    background-image: url('https://www.skillcapital.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpython-banner.534dafb4.jpg&w=640&q=75&dpl=dpl_AkztB5QJf895m1Ui7ShatVQy5b5j');
+    padding: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    margin: 20px;
+    background-position: center center;
+    background-size: cover;
+}

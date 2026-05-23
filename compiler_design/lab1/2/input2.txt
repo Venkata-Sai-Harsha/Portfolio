@@ -1,0 +1,43 @@
+#include <stdio.h> // Include header
+#define MAX 100
+
+int main() {
+    int num = 10;  // Integer
+    float price = 10.99;  /* Floating-point number */
+    
+    if (num > 0) {
+        printf("Positive number\n");
+        for (int i = 0; i < num; i++) {
+            num++;
+            num--;
+        }
+    } else {
+        printf("Non-positive number\n");
+    }
+
+    switch (num) {
+        case 1: 
+            break;
+        case 2: 
+            continue;
+        default: 
+            return 0;
+    }
+    
+    while (num < MAX) {
+        num += 1;
+    }
+
+    int result = num & MAX;
+    result |= 1;
+    result ^= 2;
+    result <<= 1;
+    result >>= 1;
+
+    int *p = &num;
+    *p = 20;
+    (*p)++;
+    p->num;
+    
+    return 0;
+}//end of int main

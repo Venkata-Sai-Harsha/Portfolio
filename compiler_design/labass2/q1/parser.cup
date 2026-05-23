@@ -1,0 +1,35 @@
+parser code {: 
+    public static void main(String[] args) {
+        System.out.println("Parsing started...");
+        new Parser(new Lexer(System.in)).parse();
+    }
+:};
+
+terminal IF, ELSE, SWITCH, ID, NUMBER, LT, GT, LE, GE, EQ, NE, LBRACE, RBRACE, LPAREN, RPAREN, SEMICOLON;
+
+non terminal condition, statement, statements;
+
+condition ::=
+    ID comparator ID
+  | ID comparator NUMBER
+  ;
+
+comparator ::=
+    LT  /* < */
+  | GT  /* > */
+  | LE  /* <= */
+  | GE  /* >= */
+  | EQ  /* == */
+  | NE  /* != */
+  ;
+
+statements ::=
+    statement
+  | statements statement
+  ;
+
+statement ::=
+    IF LPAREN condition RPAREN LBRACE statements RBRACE
+  | IF LPAREN condition RPAREN LBRACE statements RBRACE ELSE LBRACE statements RBRACE
+  | SWITCH LPAREN condition RPAREN LBRACE statements RBRACE
+  ;

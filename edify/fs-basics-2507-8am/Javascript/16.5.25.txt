@@ -1,0 +1,34 @@
+DOM (Document Object Model) -> It's a tree which is buit on top of HTML Source code.
+> As a root of DOM, will have "document" object. Starting from here Javascript complier will 
+start searching for HTML Elements.
+
+DOM Manipulation:
+
+    document.getElementById(id) -> Retrieves matching HTML Element using id name.
+
+    document.getElementsByClassName(class) -> Retrieves all the matching HTML elements using class name.
+
+    document.getElementsByTagName(tag) -> Retrieves all the match HTML elements using tag name.
+
+
+Event:
+
+    <button onclick="registerUser()">Register</button>
+
+Event Listener:
+
+    <button id="register-btn">Register</button>
+
+
+    var registerBtn = document.getElementById('register-btn');
+
+    registerBtn.addEventListener('click', function() {
+        // Statements...
+    });
+
+
+Create Element:
+
+    document.createElement('tagName')
+
+    parentElement.appendChild(childElement)

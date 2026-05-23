@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label>Secured Marks</label>
+        <input type="number" placeholder="Enter marks" id="marks" />
+    </div>
+    <button onclick="getGrade()">Submit</button>
+    <h3 id="result"></h3>
+
+    <script>
+
+        function getGrade() {
+            var marks = document.getElementById('marks').value;
+            var result = '';
+
+            if (marks >= 90) {
+                result = 'Excellent, You scored an A+';
+            } else if (marks >= 80) {
+                result = 'Great Job, You scored an A';
+            } else if (marks >= 70) {
+                result = 'Great Effort, You scored an B';
+            } else if (marks >= 60) {
+                result = 'You scored a C, Keep improving';
+            } else if (marks >= 50) {
+                result = 'You passed with D, Work hard';
+            } else {
+                result = 'Unfortunately, you failed, try again';
+            }
+
+            document.getElementById('result').innerHTML = result;
+        }
+
+
+
+    </script>
+</body>
+</html>
+
+<!-- Marks 
+
+    > 90 -> A+
+
+    >= 80 -> A
+
+    >= 70 -> B
+
+    >= 60 -> C
+
+    >= 50 -> D
+
+    < 50 -> Fail -->

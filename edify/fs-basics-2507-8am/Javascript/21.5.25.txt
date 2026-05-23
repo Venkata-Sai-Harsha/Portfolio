@@ -1,0 +1,46 @@
+AJAX:
+
+    var httpRequest = new XMLHttpRequest();
+
+    httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === 4) {
+
+        }
+    }
+
+    httpRequest.open(method, url);
+
+    httpRequest.send(requestBody)
+
+    requestBody (Optional) - It is available only for POST, PUT & PATCH
+
+                            GET & DELETE - requestBody won't be available
+
+    status - [100 - 600]
+
+    1xx - Informational
+    2xx - Success
+        200 - OK
+        201 - Created
+        204 - No Content
+    3xx - Redirection
+    4xx - Client Error - FE
+        400 - Bad Request
+        401 - Unauthorized
+        403 - Forbidden
+        404 - Not Found
+    5xx - Server Error - BE
+        500 - Internal Server Error
+        502 - Bad Gateway
+
+
+    < 400 - Success related status codes.
+    >= 400 - Failure status codes.
+
+To convert requestBody from Object/Array to String format:
+
+    JSON.stringify(requestBody)
+
+To convert responseBody from String to Object/Array:
+
+    JSON.parse(responseBody)

@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#devops-training {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+#devops-training h2 {
+    text-shadow: 2px 2px #ff0000;
+    visibility: visible;
+}
+

@@ -1,0 +1,15 @@
+{
+    "C_Cpp.errorSquiggles": "enabled",
+    "python.analysis.extraPaths": [
+        "./distributed_systems/lab4/grpc/src/python/grpcio"
+    ],
+    "cmake.sourceDirectory": "D:/studies/vscode/distributed_systems/lab4/grpc/examples/cpp/helloworld/cmake_externalproject",
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\pvenk\\Downloads\\mysql-connector-j-8.3.0.jar"
+    ],
+    "files.associations": {
+        "string": "cpp"
+    }
+}

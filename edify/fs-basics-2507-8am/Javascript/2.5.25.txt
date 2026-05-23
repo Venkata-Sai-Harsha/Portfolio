@@ -1,0 +1,54 @@
+Variable: A variable in JavaScript is a named storage location that holds a value. 
+
+    Syntax:
+
+    Variable Definition
+
+        var variableName = value;
+
+
+    To retrieve the value:
+
+        variableName;
+
+Data Types: A data type classifies a specific type of value.
+
+Types
+1. Primitive Data Types: String, Boolean & Number.
+2. Non Primitive Data Types: Array, Object & Function
+
+    String - Collection of alpha numeric values in single quotes or double quotes.
+
+    Number - Collection of numeric values.
+
+    Boolean - true / false
+
+Array: Collection of similar values.
+
+    Syntax:
+
+        var variableName = [value1, value2, value3, ,,, valueN];
+
+            index -             0       1       2        n - 1
+
+        To retrieve a specific value:
+
+            variableName[index]
+
+Object: Collection of key and value pairs.
+
+    Syntax:
+
+        var variableName = {
+            key1: value1,
+            key2: value2,
+
+
+            keyN: valueN
+        };
+
+    To retrieve value from a key of an object:
+
+        variableName['key'] / variableName.key;
+
+Task: Create array of groceries and display in UI

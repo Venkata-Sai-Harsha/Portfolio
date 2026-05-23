@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    padding: 40px;
+}
+
+.calculator-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.calculator-container input {
+    width: 93%;
+    padding: 12px 14px;
+    margin: 12px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.2s;
+}
+
+.calculator-container input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.calculator-container button {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator-container button:hover {
+    background-color: #2980b9;
+}

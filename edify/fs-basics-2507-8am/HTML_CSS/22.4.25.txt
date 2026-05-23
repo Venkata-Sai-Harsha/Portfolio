@@ -1,0 +1,44 @@
+Box Shadow: It applies shadow around the box.
+
+    Syntax:
+
+        box-shadow: h-offset v-offset blur spread color;
+
+            h-offset: Horizantal offset
+
+            v-offset: Vertical offset
+
+
+        0 0 15px #cccccc3b
+
+        0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    
+Text Shadow: Applies shadow for the text.
+
+    Syntax:
+
+        text-shadow: h-shadow v-shadow blur-radius color
+
+Display: Shows or hides the content in the web page.
+
+    Syntax:
+
+        display: block | inline | flex | none;
+
+Visibility: Shows or hides the content of a web page.
+
+    Syntax:
+
+        visibility: visible | hidden;
+
+Overflow: Used to handle overflowed content of web page.
+
+    Syntax:
+
+        overflow: visible | hidden | scroll | auto;
+
+Z-index: Using this, we can specific ranking to html elements.
+
+    Syntax:
+
+        z-index: 2;

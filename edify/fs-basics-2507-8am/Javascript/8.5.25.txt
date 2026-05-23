@@ -1,0 +1,27 @@
+Switch: The switch statement in JavaScript is a control flow statement that evaluates an 
+expression, matching the expression's value against a series of case clauses.
+> If a match is found, the code block associated with that case is executed. 
+> The switch statement provides an alternative to using multiple if...else if statements when 
+comparing a single expression against various possible values.
+
+    Syntax:
+
+        switch(expression) {
+            case value1: {
+
+                break;
+            }
+            case value2: {
+
+                break;
+            }
+
+            case valueN: {
+
+                break;
+            }
+
+            default: {
+
+            }
+        }

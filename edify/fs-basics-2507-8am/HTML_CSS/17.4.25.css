@@ -1,0 +1,56 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+}
+
+#parent-container {
+    padding: 20px;
+    /* height: 100vh; */
+    border: 1px solid gray;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* align-items: stretch; */
+    gap: 20px;
+}
+.child-container {
+    width: 25%;
+    border: 1px solid gray;
+}
+
+#container1 {
+    order: 2;
+}
+#container2 {
+    order: 3;
+}
+#container3 {
+    order: 1;
+}
+
+#fitness-influencer {
+    display: flex;
+    padding: 20px 4rem;
+    column-gap: 15px;
+}
+#fitness-influencer h3 {
+    color: #c70d0d;
+}
+#fitness-influencer img {
+    width: 100%;
+}
+
+#whats-left-details {
+    width: 60%;
+}
+#whats-right-details {
+    width: 40%;
+}
+.whats-right-inner-details {
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}

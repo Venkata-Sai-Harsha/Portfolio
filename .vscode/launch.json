@@ -1,0 +1,99 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "reverse",
+            "request": "launch",
+            "mainClass": "project.reverse",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "post",
+            "request": "launch",
+            "mainClass": "post",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "edify.advjava.jdbc.project_2.src.App",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "PostgresJDBC",
+            "request": "launch",
+            "mainClass": "edify.advjava.jdbc.project_1.src.PostgresJDBC",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "Create",
+            "request": "launch",
+            "mainClass": "edify.advjava.jdbc.project_1.src.Create",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "CreateData",
+            "request": "launch",
+            "mainClass": "edify.advjava.jdbc.project_1.src.CreateData",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "sumofdigits",
+            "request": "launch",
+            "mainClass": "edify.java.part_B.sumofdigits",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "SumCallableTask",
+            "request": "launch",
+            "mainClass": "SumCallableTask",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "SumRunnableTask",
+            "request": "launch",
+            "mainClass": "SumRunnableTask",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "tempCodeRunnerFile",
+            "request": "launch",
+            "mainClass": "tempCodeRunnerFile",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "MyThread",
+            "request": "launch",
+            "mainClass": "MyThread",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "vscode_2064fbcb"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

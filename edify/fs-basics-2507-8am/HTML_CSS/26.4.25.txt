@@ -1,0 +1,109 @@
+Transitions: CSS property value can be changed from one to another smoothly.
+
+    10px -> 14px
+
+        Syntax:
+
+            transition-property: margin;
+            transition-duration: 2s;
+            transition-delay: 0s;
+            
+            transition-timing-function: ease-in | ease-out | linear | ease-in-out; (Speed of the transition)
+
+                ease-in: It starts slowly and later moves in linear manner.
+
+                ease-out: It starts in a linear manner and ends slowly.
+
+                ease-in-out: It starts slowly and ends slowly, it between it will be linear.
+
+                linear: It moves in a linear manner, through out the time duration.
+
+Animations: CSS property values can be changed from one to another and another to another smoothly.
+
+    Syntax:
+
+        animation-name: customAnimation;
+        
+        animation-duration: 2s;
+
+        animation-iteration-count: 1 | 2 .... N | infinite;
+
+        animation-direction: normal | reverse | alternate;
+
+        animation-delay: 1s;
+
+        animation-timing-function: ease-in | ease-out | linear | ease-in-out; (Speed of the transition)
+
+        @keyframes customAnimation {
+            0% {
+                property: value;
+            }
+            50% {
+                property: value;
+            }
+            100% {
+                property: value;
+            }
+        }
+
+        @keyframes customAnimation {
+        0s    0% {
+                property: value;
+            }
+        0.5s    25% {
+                property: value;
+            }
+        1s    50% {
+                property: value;
+            }
+        1.5s    75% {
+                property: value;
+            }
+        2s    100% {
+                property: value;
+            }
+        }
+
+Media Queries: It applies responsiveness for the web application.
+
+> Responsiveness indicates making application comparitable in different devices like mobiles, tablets, desktops, laptops etc...
+
+    Extra Small Devices - Mobiles (Device width < 600px)
+
+    @media only screen and (max-width: 600px) {
+        selector {
+            property: value;
+        }
+    }
+
+    Small Devices - Portrait Tablets & Large Mobiles (Device width: > 600px and < 768px)
+    
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+        selector {
+            property: value;
+        }
+    }
+
+    Medium Devices: Landscape Tablets (Device width: > 768px and < 992px)
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+        selector {
+            property: value;
+        }
+    }
+
+    Large Devices: Laptops/Desktops (Device width: > 992px and < 1200px)
+
+    @media only screen and (min-width: 992px) and (max-width: 1200px) {
+        selector {
+            property: value;
+        }
+    }
+
+    Extra Large Devices: Large Laptops/Desktops (Device width > 1200px)
+
+    @media only screen and (min-width: 1200px) {
+        selector {
+            property: value;
+        }
+    }

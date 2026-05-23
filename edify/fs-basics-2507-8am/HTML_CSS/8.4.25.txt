@@ -1,0 +1,81 @@
+Padding: Adds empty space between border and content of element.
+
+    Syntax:
+
+        padding: 10px;
+
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+
+        padding: 20px 12px 34px 45px; (Clock wise direction) (top, right, bottom & left)
+ 
+        padding: 20px 30px; (First value is top & bottom & Second value is left & right)
+
+Margin: Adds empty space between border and other element.
+
+    Syntax:
+
+        margin: 10px;
+
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        margin: 20px 12px 34px 45px; (Clock wise direction) (top, right, bottom & left)
+ 
+        margin: 20px 30px; (First value is top & bottom & Second value is left & right)
+
+Division: Groups a set of elements into one unit.
+
+> It divides web page into different portions.
+
+    Syntax:
+
+        <div>
+            // HTML Elements...
+        
+        </div>
+
+Box Model: Margin - Border - Padding - Content
+
+Background Properties
+1. Background Color
+2. Background Image
+3. Background Repeat
+4. Background Position
+5. Background Size
+
+Background Image:
+
+    Syntax:
+
+        background-image: url(filename.ext);
+
+Background Repeat:
+
+    Syntax:
+
+        background-repeat: no-repeat | repeat | repeat-x | repeat-y;
+
+Background Position: 
+
+    Syntax:
+
+        background-position: top left | center center | bottom left | top right | bottom right;
+
+Background Size:
+
+    Syntax:
+
+        background-size: 
+        
+Task: Design first portion of all food restaurant website.
+
+Background Image:
+https://preview.colorlib.com/theme/allfood/assets/img/hero/h1_hero.png.webp
+
+Website link:
+https://preview.colorlib.com/theme/allfood/

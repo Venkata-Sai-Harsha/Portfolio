@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function getUserInfo() {
+            return 'Charan';
+        }
+
+        console.log(getUserInfo)
+
+        var formattedFullName = function () {
+            var firstname = 'dinesh';
+            var lastname = 'karthik';
+            var fullname = `${firstname.charAt(0).toUpperCase() + firstname.slice(1, )} ${lastname.charAt(0).toUpperCase() + lastname.slice(1, )}`;
+            return fullname;
+        };
+
+        // console.log(formattedFullName());
+
+        var userInfo = {
+            firstname: 'dinesh',
+            lastname: 'karthik',
+            formattedFullName: function() {
+                var fullname = `${this.firstname.charAt(0).toUpperCase() + this.firstname.slice(1, )} ${this.lastname.charAt(0).toUpperCase() + this.lastname.slice(1, )}`;
+                return fullname;
+            }
+        };
+
+        console.log(userInfo.formattedFullName);
+
+        (function() {
+            console.log('In IIFE function...');
+        })();
+
+        function func1(param1) {
+
+        }
+
+        func1(45, 'Harish', {name: 'Digital Edify'}, [56], function() { return ''; });
+
+        var users = ['Jayanth', 'Lokesh', 'Murali'];
+
+        users.forEach(function(user, index) {
+            console.log(index, user)
+        });
+
+        function func1(b) {
+
+            var a = 10;
+
+            var func2 = function() {
+                console.log(a, b);
+            }
+
+            func2();
+        }
+
+        func1(20);
+
+    
+
+    </script>
+    
+</body>
+</html>

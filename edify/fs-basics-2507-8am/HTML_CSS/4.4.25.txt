@@ -1,0 +1,112 @@
+FS Basics
+HTML
+CSS
+Javascript
+Bootstrap
+
+Visual Studio Code (VSC): It is an Integrated Development Environment (IDE) for developing web applications.
+
+HTML: Hyper Text Markup Language.
+> HTML consists of Predefined markup tags/elements used to display content in web page.
+
+    Tag/Element Syntax:
+
+        <tagName>Content here...</tagName>
+
+        <tagName> - Starting tag
+
+        </tagName> - Ending tag
+
+        Content needs to written in between starting and ending tag.
+
+> HTML Complier takes tag as input, formats the content and display formatted content in the web page.
+
+> filename.html
+
+    word-word-word.html
+
+    Camel Case: Starting from second word, first letter every word should be capital case.
+
+        wordWordWord.html
+
+    
+    filename.html
+
+    <html>
+        <head>
+
+            Configuration needs to be included here...
+
+        </head>
+
+        <body>
+
+            Displaying content of web page...
+
+        </body>
+    
+    </html>
+
+Headers: Used content as a headers.
+
+    Syntax:
+
+        <h1>Content here...</h1>
+
+        <h2>Content here...</h2>
+
+        <h3>Content here...</h3>
+
+        <h4>Content here...</h4>
+
+        <h5>Content here...</h5>
+
+        <h6>Content here...</h6>
+
+    Difference between each header tag is font size. H1 has highest font size & h6 has lowest font size.
+
+Paragraph:
+
+    Syntax:
+
+        <p>Content here...</p>
+
+Image:
+
+    Syntax:
+
+        <img src="image-name" alt="value"/>
+
+            src - source 
+
+            alt - alternate
+        
+Attribute: Attribute gives additional inputs to tag.
+
+    Syntax:
+
+        <tagName attribute1=value1 attribute2=value2 attribute3=value3></tagName>
+
+Anchor: Used for navigate from one web page to another web page.
+
+    Syntax:
+
+        <a href="filename.html">Content </a>
+
+            href - Hyper Reference
+
+Favicon: Favicon can be displayed using link tag.
+
+    Syntax:
+
+        <link rel="icon" href="filename.ico" />
+
+Title:
+
+    Syntax:
+
+        <title>Page name</title>
+
+Task: Display headers, Paragraph, images, favicon & title in html file.
+
+https://www.digital-lync.com/

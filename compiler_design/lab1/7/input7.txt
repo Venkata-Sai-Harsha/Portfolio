@@ -1,0 +1,7 @@
+123-456-7890
+johndoe@example.com
+https://www.example.com
+http://subdomain.example.co.uk/page
+555-123-4567
+invalid@email
+www.invalid-website

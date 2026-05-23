@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../styles/forms.css" />
+    </head>
+
+    <body>
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Register</h2>
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" name="firstname">
+                <p id="firstname-msg"></p>
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="lastname">
+                <p id="lastname-msg"></p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <p id="email-msg"></p>
+                <label for="mobile">Mobile No</label>
+                <input type="text" id="mobile" name="mobile">
+                <p id="mobile-msg"></p>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <p id="password-msg"></p>
+                <button onclick="registerUser()">Submit</button>
+            </div>
+        </div>
+
+        <script>
+
+            function registerUser() {
+                clearValidationMsgs();
+
+                var isFormValid = validateFirstname() && validateLastname() && validateEmail() && validateMobile() && validatePassword();
+
+                if (isFormValid) {
+                    // Do backend API Call to register the user...
+
+                    var requestBody = {
+                        firstname: document.getElementById('firstname').value,
+                        lastname: document.getElementById('lastname').value,
+                        email: document.getElementById('email').value,
+                        mobile: document.getElementById('mobile').value,
+                        password: document.getElementById('password').value
+                    };
+
+                    var strRequestBody = JSON.stringify(requestBody);
+
+                    var httpRequest = new XMLHttpRequest();
+
+                    httpRequest.onreadystatechange = function() {
+                        if (httpRequest.readyState === 4) {
+                            console.log(httpRequest.responseText);
+                            window.alert('Registered user successfully');
+                        }
+                    }
+
+                    httpRequest.open('POST', 'http://localhost:4000/users');
+
+                    httpRequest.send(strRequestBody);
+                }   
+
+            }
+
+            function validateFirstname() {
+                var firstnameInputValue = document.getElementById('firstname').value;
+                if (firstnameInputValue.length === 0) {
+                    document.getElementById('firstname-msg').innerHTML = 'Firstname is required';
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function validateLastname() {
+                var lastnameInputValue = document.getElementById('lastname').value;
+                if (lastnameInputValue.length === 0) {
+                    document.getElementById('lastname-msg').innerHTML = 'Lastname is required';
+                    return false;
+                } else if (lastnameInputValue.length <= 3) {
+                    document.getElementById('lastname-msg').innerHTML = 'Minimum 3 characters';
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function validateEmail() {
+                var emailInputValue = document.getElementById('email').value;
+                var emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+                if (emailInputValue.length === 0) {
+                    document.getElementById('email-msg').innerHTML = 'Email is required';
+                    return false;
+                } else if (!emailRegex.test(emailInputValue)) {
+                    document.getElementById('email-msg').innerHTML = 'Incorrect email format';
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function validateMobile() {
+                var mobileInputValue = document.getElementById('mobile').value;
+                var mobileRegex = /^[6-9]\d{9}$/
+                if (mobileInputValue.length === 0) {
+                    document.getElementById('mobile-msg').innerHTML = 'Mobile is required';
+                    return false;
+                } else if (!mobileRegex.test(mobileInputValue)) {
+                    document.getElementById('mobile-msg').innerHTML = 'Mobile should be exactly 10 digits';
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function validatePassword() {
+                var passwordInputValue = document.getElementById('password').value;
+
+                if (passwordInputValue.length === 0) {
+                    document.getElementById('password-msg').innerHTML = 'Password is required';
+                    return false;
+                } else if (!/^.{8,}$/.test(passwordInputValue)) {
+                    document.getElementById('password-msg').innerHTML = 'Miniumum 8 Characters are required';
+                    return false;
+                } else if (!/^(?=.*[A-Z]).+$/.test(passwordInputValue)) {
+                    document.getElementById('password-msg').innerHTML = 'Atleast one upper case character is required';
+                    return false;
+                } else if (!/^(?=.*[a-z]).+$/.test(passwordInputValue)) {
+                    document.getElementById('password-msg').innerHTML = 'Atleast one lower case character is required';
+                    return false;
+                } else if (!/^(?=.*\d).+$/.test(passwordInputValue)) {
+                    document.getElementById('password-msg').innerHTML = 'Atleast one digit is required';
+                    return false;
+                } else if (!/^(?=.*[@#$%^&+=!]).+$/.test(passwordInputValue)) {
+                    document.getElementById('password-msg').innerHTML = 'Atleast one special character is required';
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function clearValidationMsgs() {
+                document.getElementById('firstname-msg').innerHTML = '';
+                document.getElementById('lastname-msg').innerHTML = '';
+                document.getElementById('email-msg').innerHTML = '';
+                document.getElementById('mobile-msg').innerHTML = '';
+                document.getElementById('password-msg').innerHTML = '';
+            }
+
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>

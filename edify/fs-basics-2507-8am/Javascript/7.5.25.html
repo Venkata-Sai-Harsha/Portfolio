@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="7.5.25.css"/>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email"/>
+        </div>
+        <div id="password-container">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password"/>
+            <i class="fa-solid fa-eye" onclick="togglePassword()" id="password-icon"></i>
+        </div>
+        <input type="button" value="Login" onclick="loginUser()"/>
+        <h4 id="error-msg"></h4>
+    </div>
+
+    <script>
+
+        var email = 'yashwanth@digitaledify.ai';
+
+        var dbEmail = 'yashwanth@digitaledify.ai'
+
+        if (email === dbEmail) {
+            console.log('Both emails are matching');
+        } else {
+            console.log('Emails are not matching');
+        }
+
+        var isPasswordVisible = true;
+        function togglePassword() {
+            var passwordIcon = document.getElementById('password-icon');
+            var passwordInput = document.getElementById('password');
+            isPasswordVisible = !isPasswordVisible;
+
+            if (isPasswordVisible) {
+                passwordInput.type = 'password';
+                passwordIcon.classList.add('fa-eye');
+                passwordIcon.classList.remove('fa-eye-slash');
+            } else {
+                passwordInput.type = 'text';
+                passwordIcon.classList.remove('fa-eye');
+                passwordIcon.classList.add('fa-eye-slash');
+            }
+        }
+
+        var userInfo = {
+            email: 'dinesh.k@gmail.com',
+            password: 'Dinesh@!23',
+            name: 'Dinesh',
+            status: true
+        };
+
+        function loginUser() {
+            var emailInputValue = document.getElementById('email').value;
+            var passwordInputValue = document.getElementById('password').value;
+            if (userInfo.email === emailInputValue && userInfo.password === passwordInputValue) {
+                alert('Credentials are matching, Navigating to Home Page...');
+                window.location.href = 'home.html';
+            } else {
+                document.getElementById('error-msg').innerHTML = 'Incorrect email or password';
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

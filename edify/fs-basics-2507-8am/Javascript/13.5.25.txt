@@ -1,0 +1,14 @@
+Array Methods:
+push( ); -> Inserts element at last index of an array.
+pop( ); -> Deletes value from last index of an array.
+splice(index_pos, delete_num, “new_value”, “new_value”);  // Insert or delete value from any index of array.
+concat( second_arr); -> Joins more than two arrays.
+Sort( ) -> Sorts the elements in ascending order.
+Reverse( ) -> Reverse the current order of the array.
+Includes() -> Returns true, if value exist in the array otherwise false.
+
+Object Methods:
+Object.values()
+Object.keys()
+Object.freeze()
+Object.assign()

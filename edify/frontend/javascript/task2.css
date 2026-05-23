@@ -1,0 +1,28 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#parent-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+.child-container{
+    width: 25%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.child-container img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+button{
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+}

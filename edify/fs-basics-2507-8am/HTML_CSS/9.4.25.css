@@ -1,0 +1,63 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+
+#sale-up {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    text-align: center;
+}
+#shop-now {
+    color: bisque;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid bisque;
+}
+
+.fashion-style {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#fashion-style {
+    background-image: url('https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero1.jpg.webp');
+    padding: 6rem 5rem;
+}
+
+.fashion-style p {
+    width: 40%;
+    line-height: 24px;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+#fashion-style2 {
+    background-image: url('https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero2.jpg.webp');
+    padding: 6rem 5rem 5rem 48rem;
+}
+
+#fashion-style2 p {
+    width: 80%;
+}
+
+.fashion-style a {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+#customer-testimonial {
+    background-color: #f3ead8;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#style-every-body {
+    width: 50%;
+    margin: auto;
+    line-height: 24px;
+}

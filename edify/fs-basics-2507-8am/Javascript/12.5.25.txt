@@ -1,0 +1,16 @@
+Concatenation Operator (+)
+
+    String1 + String2
+            
+            + String3
+
+    String1 + variableName1 + String2 + variableName2
+
+Template Literals: Template literals, also known as template strings, are a feature in 
+JavaScript that allow for easier string interpolation and multi-line strings. 
+> They are defined using backticks (`) instead of single or double quotes. 
+> Template literals can contain placeholders, which are expressions enclosed in ${}. 
+
+    Syntax:
+
+        var variableName = `String1 String2 ${variableName1} ${variableName2}`;

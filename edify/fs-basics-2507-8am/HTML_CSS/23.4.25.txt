@@ -1,0 +1,43 @@
+Forms: We can get information from user in different formats like text, image, file etc...
+
+    Syntax:
+
+        <form>
+
+        
+        </form>
+
+Label: Specifies the form field name.
+
+    Syntax:
+
+        <label>Form Field Name</label>
+
+Input: Used to get data from user in different formats.
+
+    Syntax:
+
+        <input type="text | number | email | password | date | datetime-local | file | radio | checkbox | button" name="firstname" placeholder="Enter firstname">
+
+Select: Used to select a option out of available list.
+
+    Syntax:
+
+        <select>
+            <option>Content1</option>
+            <option>Content2</option>
+            <option>Content3</option>
+            <option>Content4</option>
+        </select>
+
+Textarea: Using this we can entered input in different rows and columns.
+
+    Syntax:
+
+        <textarea rows="5" cols="3"></textarea>
+
+Note: Every form related tags are inline elements.
+
+Task: Design Signup page w3schools website.
+
+https://profile.w3schools.com/signup?redirect_url=https%3A%2F%2Fwww.w3schools.com%2Fcss%2Fcss3_shadows_box.asp

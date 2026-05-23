@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+button {
+    background-color: rgb(77, 48, 166);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition-property: padding, font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+button:hover {
+    background-color: rgb(82, 4, 199);
+    padding: 14px 20px;
+    font-size: 22px;
+}
+#container {
+    background-color: beige;
+    padding: 60px;
+    width: 100px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    animation-name: leftRightAnimation;
+    animation-duration: 4s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes leftRightAnimation {
+    0% {
+        background-color: blue;
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 400px;
+    }
+    50% {
+        top: 400px;
+        left: 400px;
+    }
+    75% {
+        top: 400px;
+        left: 0px;
+    }
+    100% {
+        background-color: brown;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+#spinner {
+    border: 10px solid rgb(242, 242, 242);
+    border-top-color: rgb(53, 153, 219);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    animation-name: spinner;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

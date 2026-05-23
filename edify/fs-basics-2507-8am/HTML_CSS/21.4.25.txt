@@ -1,0 +1,22 @@
+Positions: Using positions we can specify or change the position of an HTML Elements.
+
+    Syntax:
+
+        position: relative | absolute | fixed | sticky;
+
+        relative - Element position can be changed from one to another.
+
+        absolute - Child element position can be changed by taking reference of parent element.
+
+        fixed - Element can be fixed the viewpoint, irrespective of web page scroll.
+
+        sticky - Element will be fixed to the viewpoint, when user starting scrolling web page.
+
+            top
+            left: 0px
+            right 
+            bottom
+
+Task: Design Navbar of Oakberry webpage
+
+https://preview.colorlib.com/theme/oakberry/

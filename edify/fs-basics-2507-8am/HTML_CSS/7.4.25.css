@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: white;
+    background-color: gray;
+}
+
+p {
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#hybrid-classroom {
+    color: aqua;
+}
+
+#our-trending-programs {
+    color: aquamarine;
+    background-color: white;
+    font-size: 26px;
+}
+
+.course-name {
+    color: gray;
+    font-size: 30px;
+}
+
+#contact-course-advisor {
+    color: black;
+    border-bottom: 5px solid red;
+    font-size: 16px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var counter = 0;
+
+        counter++;
+
+        counter++;
+
+        counter--;
+
+        console.log('Counter: ', counter);
+
+        var marks = [78, 56, 45, 35, 34, 78];
+
+        var totalMarks = 0;
+        var index = 0;
+
+        totalMarks += marks[index];
+        index++;
+
+        totalMarks += marks[index];
+        index++;
+
+        totalMarks += marks[index];
+        index++;
+
+        totalMarks += marks[index];
+        index++;
+
+        totalMarks += marks[index];
+        index++;
+
+        totalMarks += marks[index];
+        index++;
+
+        console.log('Total marks of all the subjects: ', totalMarks);
+
+        var email = 'manikanta.k@yopmail.com';
+
+        var databaseEmail = 'manikanta.k@gmail.com';
+
+        var isEmailsMatching = (email === databaseEmail);
+
+        console.log('Is emails matching', isEmailsMatching);
+
+        var totalPrice = 15290;
+
+        var totalPriceStr = '15290';
+
+        var isTotalPriceEqual = totalPrice === totalPriceStr ? 'Values are matching' : 'Values are not matching' ;
+
+        var isUserActive = true;
+
+        var isUserActiveStr = 'true';
+
+        var isActiveEqual = (isUserActive !== isUserActiveStr) ? 'Values are matching' : 'Values are not matching';
+
+        console.log(isActiveEqual);
+
+        console.log('9345' !== 9345);
+
+        var email = 'manikanta.k@yopmail.com';
+
+        var databaseEmail = 'manikanta.g@yopmail.com';
+
+        var password = 'manikanta@!65';
+
+        var databasePassword = 'manikanta@!66';
+
+        var isCredentialsMatching = (email === databaseEmail) && (password === databasePassword);
+
+        console.log(isCredentialsMatching);
+
+        var mobileNo = 9032345245;
+
+        var dbMobileNo = 9032345245;
+
+        var isEmailAndMobileMatching = (email === databaseEmail) || (mobileNo === dbMobileNo);
+
+        var isActive = false;
+
+        isActive = !isActive;
+
+        console.log('Is Active', isActive);
+
+
+    </script>
+</body>
+</html>
